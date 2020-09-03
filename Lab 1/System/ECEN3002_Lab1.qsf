@@ -13,68 +13,6 @@ set_global_assignment -name DEVICE_FILTER_PIN_COUNT 896
 set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 6
 
 #============================================================
-# CLOCK
-#============================================================
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK_50
-set_location_assignment PIN_AF14 -to CLOCK_50
-
-#============================================================
-# KEY
-#============================================================
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KEY[0]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KEY[1]
-set_location_assignment PIN_AJ4 -to KEY[0]
-set_location_assignment PIN_AK4 -to KEY[1]
-
-#============================================================
-# SW
-#============================================================
-set_instance_assignment -name IO_STANDARD "2.5 V" -to SW[0]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to SW[1]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to SW[2]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to SW[3]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to SW[4]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to SW[5]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to SW[6]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to SW[7]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to SW[8]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to SW[9]
-set_location_assignment PIN_AB30 -to SW[0]
-set_location_assignment PIN_Y27 -to SW[1]
-set_location_assignment PIN_AB28 -to SW[2]
-set_location_assignment PIN_AC30 -to SW[3]
-set_location_assignment PIN_W25 -to SW[4]
-set_location_assignment PIN_V25 -to SW[5]
-set_location_assignment PIN_AC28 -to SW[6]
-set_location_assignment PIN_AD30 -to SW[7]
-set_location_assignment PIN_AC29 -to SW[8]
-set_location_assignment PIN_AA30 -to SW[9]
-
-#============================================================
-# LED
-#============================================================
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[0]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[1]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[2]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[3]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[4]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[5]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[6]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[7]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[8]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[9]
-set_location_assignment PIN_AA24 -to LEDR[0]
-set_location_assignment PIN_AB23 -to LEDR[1]
-set_location_assignment PIN_AC23 -to LEDR[2]
-set_location_assignment PIN_AD24 -to LEDR[3]
-set_location_assignment PIN_AG25 -to LEDR[4]
-set_location_assignment PIN_AF25 -to LEDR[5]
-set_location_assignment PIN_AE24 -to LEDR[6]
-set_location_assignment PIN_AF24 -to LEDR[7]
-set_location_assignment PIN_AB22 -to LEDR[8]
-set_location_assignment PIN_AC22 -to LEDR[9]
-
-#============================================================
 # End of pin assignments by Terasic System Builder
 #============================================================
 
@@ -102,4 +40,71 @@ set_global_assignment -name EDA_TEST_BENCH_NAME tb_counter -section_id eda_simul
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_counter
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_counter -section_id tb_counter
 set_global_assignment -name EDA_TEST_BENCH_FILE ../Files/tb_counter.v -section_id tb_counter
+set_location_assignment PIN_AC22 -to LEDR[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[9]
+set_location_assignment PIN_AF14 -to CLOCK_50
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK_50
+set_location_assignment PIN_AJ4 -to KEY[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KEY[0]
+set_location_assignment PIN_AK4 -to KEY[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KEY[1]
+set_instance_assignment -name SLEW_RATE 0 -to LEDR[9]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to LEDR[9]
+set_location_assignment PIN_AB30 -to SW[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to SW[0]
+set_location_assignment PIN_AA30 -to SW[9]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to SW[9]
+set_location_assignment PIN_AC29 -to SW[8]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to SW[8]
+set_location_assignment PIN_AD30 -to SW[7]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to SW[7]
+set_location_assignment PIN_AC28 -to SW[6]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to SW[6]
+set_location_assignment PIN_V25 -to SW[5]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to SW[5]
+set_location_assignment PIN_W25 -to SW[4]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to SW[4]
+set_location_assignment PIN_AC30 -to SW[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to SW[3]
+set_location_assignment PIN_AB28 -to SW[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to SW[2]
+set_location_assignment PIN_Y27 -to SW[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to SW[1]
+set_location_assignment PIN_AB22 -to LEDR[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[8]
+set_location_assignment PIN_AF24 -to LEDR[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[7]
+set_location_assignment PIN_AE24 -to LEDR[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[6]
+set_location_assignment PIN_AF25 -to LEDR[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[5]
+set_location_assignment PIN_AG25 -to LEDR[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[4]
+set_location_assignment PIN_AD24 -to LEDR[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[3]
+set_location_assignment PIN_AC23 -to LEDR[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[2]
+set_location_assignment PIN_AB23 -to LEDR[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[1]
+set_location_assignment PIN_AA24 -to LEDR[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[0]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to LEDR[8]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to LEDR[7]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to LEDR[6]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to LEDR[5]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to LEDR[4]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to LEDR[3]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to LEDR[2]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to LEDR[1]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to LEDR[0]
+set_instance_assignment -name SLEW_RATE 0 -to LEDR[8]
+set_instance_assignment -name SLEW_RATE 0 -to LEDR[7]
+set_instance_assignment -name SLEW_RATE 0 -to LEDR[6]
+set_instance_assignment -name SLEW_RATE 0 -to LEDR[5]
+set_instance_assignment -name SLEW_RATE 0 -to LEDR[4]
+set_instance_assignment -name SLEW_RATE 0 -to LEDR[3]
+set_instance_assignment -name SLEW_RATE 0 -to LEDR[2]
+set_instance_assignment -name SLEW_RATE 0 -to LEDR[1]
+set_instance_assignment -name SLEW_RATE 0 -to LEDR[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
