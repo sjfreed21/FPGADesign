@@ -1,0 +1,60 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/sjfre/Documents/FPGADesign/Lab 1/System/simulation/modelsim
+vECEN3002_Lab1
+Z1 !s110 1599060579
+!i10b 1
+!s100 6hm1_`4fj4Ezd4oTkBzK31
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ISB=Gz2<jo@2_ckhdkA<;U1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1599059943
+8C:/Users/sjfre/Documents/FPGADesign/Lab 1/Files/ECEN3002_Lab1.v
+FC:/Users/sjfre/Documents/FPGADesign/Lab 1/Files/ECEN3002_Lab1.v
+!i122 0
+L0 1 44
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1599060579.000000
+!s107 C:/Users/sjfre/Documents/FPGADesign/Lab 1/Files/ECEN3002_Lab1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/sjfre/Documents/FPGADesign/Lab 1/Files|C:/Users/sjfre/Documents/FPGADesign/Lab 1/Files/ECEN3002_Lab1.v|
+!i113 1
+Z6 o-vlog01compat -work work
+!s92 -vlog01compat -work work {+incdir+C:/Users/sjfre/Documents/FPGADesign/Lab 1/Files}
+Z7 tCvgOpt 0
+n@e@c@e@n3002_@lab1
+vtb_counter
+R1
+!i10b 1
+!s100 BoIJ]Kc?PE`Y[63ESG9K23
+R2
+IA^88mlD:^bYX^XWoB9JOo3
+R3
+R0
+w1599060531
+8C:/Users/sjfre/Documents/FPGADesign/Lab 1/System/../Files/tb_counter.v
+FC:/Users/sjfre/Documents/FPGADesign/Lab 1/System/../Files/tb_counter.v
+!i122 1
+L0 3 34
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/sjfre/Documents/FPGADesign/Lab 1/System/../Files/tb_counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/sjfre/Documents/FPGADesign/Lab 1/System/../Files|C:/Users/sjfre/Documents/FPGADesign/Lab 1/System/../Files/tb_counter.v|
+!i113 1
+R6
+!s92 -vlog01compat -work work {+incdir+C:/Users/sjfre/Documents/FPGADesign/Lab 1/System/../Files}
+R7
