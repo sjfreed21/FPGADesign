@@ -5,5 +5,5 @@ module vtc(
     output       hSync,
     output       vSync,
     output [9:0] hPixel,
-    output [8:0] vLine
+    output [9:0] vLine
 );

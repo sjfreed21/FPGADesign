@@ -13,19 +13,18 @@ module top(
 );
 
 wire reset, pll_clk, pll_lock, hSync, vSync, vActive;
-reg [9:0] hPixel;
-reg [8:0] vLine;
+reg [9:0] hPixel, vLine;
 reg [7:0] RED, GRN, BLU;
 
 assign VGA_BLANK_N = 0'b1;
 assign VGA_SYNC_N = 0'b0;
+assign reset = ~KEY[0];
 
 video_pll C1 (.refclk(CLOCK_50), .rst(reset), .outclk_0(pll_clk), .locked(pll_lock));
 
-assign reset = KEY[0];      // negated based on button? tie in pll_lock?
 assign VGA_CLK = pll_clk;
 
-vtc V1 (.clock(pll_clk), .rst(reset), .vActive(vActive), .hSync(hSync), .vSync(vSync), .hPixel(hPixel), .vLine(vLine));
+vtc V1 (.clock(pll_clk), .rst(pll_lock), .vActive(vActive), .hSync(hSync), .vSync(vSync), .hPixel(hPixel), .vLine(vLine));
 
 assign VGA_HS = hSync;
 assign VGA_VS = vSync;
