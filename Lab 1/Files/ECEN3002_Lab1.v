@@ -5,6 +5,14 @@ module ECEN3002_Lab1(
 	output		     [9:0]		LEDR
 );
 
+reg [2:0] sOut;
+wire KEY0, KEY1;
+
+issp_test I1 (.probe(KEY), .source(sOut));
+
+assign KEY0 = KEY[0] | sOut[0];
+assign KEY1 = KEY[1] | sOut[1];
+
 parameter clock_div = 5_000_000;        // edited for Modelsim sim. 5_000_000 for normal running, 5 for ModelSim.
 parameter clock_div_width = 32;         // also edited for Modelsim sim. 32 for normal running, 3 for ModelSim.
 
@@ -13,8 +21,8 @@ reg [clock_div_width-1:0] div_counter;
 reg slow_clk;
 
 // create 5 Hz clock
-always @(negedge KEY[0], posedge CLOCK_50)
-    if (KEY[0] == 0)
+always @(negedge KEY0, posedge CLOCK_50)
+    if (KEY0 == 0)
         begin
             div_counter <= 0;
             slow_clk <= 0;
@@ -31,10 +39,10 @@ always @(negedge KEY[0], posedge CLOCK_50)
         end
 
 // create counter
-always @(negedge KEY[0], negedge KEY[1], posedge slow_clk)
-    if (KEY[0] == 0)
+always @(negedge KEY0, negedge KEY1, posedge slow_clk)
+    if (KEY0 == 0)
         count <= 0;
-    else if (KEY[1] == 0)
+    else if (KEY1 == 0)
         count[9:0] <= SW[9:0];
     else
         count <= count + 1;

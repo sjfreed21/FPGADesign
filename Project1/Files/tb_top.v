@@ -6,7 +6,6 @@ reg        KEY;
 reg  [2:0] SW;
 wire [7:0] VGA_R, VGA_G, VGA_B;
 wire       VGA_CLK, VGA_BLANK_N, VGA_HS, VGA_VS, VGA_SYNC_N;
-wire [9:0] hP;
 
 top DUT
 (

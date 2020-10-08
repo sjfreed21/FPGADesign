@@ -16,7 +16,7 @@ reg val = 1'b0;
 
 always @(vLine, hPixel)
 begin
-    if(vLine > 120 && vLine < 220)
+    if(vLine > 120 && vLine < 220)          // This line removed for simulation - see writeup
         if(hPixel > min && hPixel < max)
             val = 1'b1;
     else

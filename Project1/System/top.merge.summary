@@ -1,10 +1,10 @@
-Partition Merge Status : Successful - Thu Oct 01 16:21:43 2020
+Partition Merge Status : Successful - Wed Oct 07 10:02:02 2020
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 Revision Name : top
 Top-level Entity Name : top
 Family : Cyclone V
-Logic utilization (in ALMs) : 336 / 41,910 ( < 1 % )
-Total registers : 513
+Logic utilization (in ALMs) : 413 / 41,910 ( < 1 % )
+Total registers : 554
 Total pins : 34 / 499 ( 7 % )
 Total virtual pins : 0
 Total block memory bits : 1,280 / 5,662,720 ( < 1 % )

@@ -1,5 +1,5 @@
 Partition Merge report for top
-Thu Oct 01 16:21:43 2020
+Wed Oct 07 10:02:02 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 
 
@@ -9,12 +9,14 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
   1. Legal Notice
   2. Partition Merge Summary
   3. Partition Merge Netlist Types Used
-  4. Connections to In-System Debugging Instance "auto_signaltap_0"
-  5. Partition Merge Partition Statistics
-  6. Partition Merge Partition Pin Processing
-  7. Partition Merge Resource Usage Summary
-  8. Partition Merge RAM Summary
-  9. Partition Merge Messages
+  4. Partition Merge Rapid Recompile Summary
+  5. Partition Merge Rapid Recompile Table of Modified Assignments
+  6. Partition Merge Rapid Recompile Table of Changed Logic Entities
+  7. Connections to In-System Debugging Instance "auto_signaltap_0"
+  8. Partition Merge Partition Pin Processing
+  9. Partition Merge Resource Usage Summary
+ 10. Partition Merge RAM Summary
+ 11. Partition Merge Messages
 
 
 
@@ -41,13 +43,13 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------+
 ; Partition Merge Summary                                                           ;
 +---------------------------------+-------------------------------------------------+
-; Partition Merge Status          ; Successful - Thu Oct 01 16:21:43 2020           ;
+; Partition Merge Status          ; Successful - Wed Oct 07 10:02:02 2020           ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Standard Edition ;
 ; Revision Name                   ; top                                             ;
 ; Top-level Entity Name           ; top                                             ;
 ; Family                          ; Cyclone V                                       ;
-; Logic utilization (in ALMs)     ; 336 / 41,910 ( < 1 % )                          ;
-; Total registers                 ; 513                                             ;
+; Logic utilization (in ALMs)     ; 413 / 41,910 ( < 1 % )                          ;
+; Total registers                 ; 554                                             ;
 ; Total pins                      ; 34 / 499 ( 7 % )                                ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 1,280 / 5,662,720 ( < 1 % )                     ;
@@ -61,16 +63,114 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------+-------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Partition Merge Netlist Types Used                                                                                            ;
-+--------------------------------+----------------+-------------------+------------------------+--------------------------------+
-; Partition Name                 ; Partition Type ; Netlist Type Used ; Netlist Type Requested ; Partition Contents             ;
-+--------------------------------+----------------+-------------------+------------------------+--------------------------------+
-; Top                            ; User-created   ; Post-Fit          ; Post-Fit               ;                                ;
-; sld_hub:auto_hub               ; Auto-generated ; Post-Synthesis    ; Post-Synthesis         ; sld_hub:auto_hub               ;
-; sld_signaltap:auto_signaltap_0 ; Auto-generated ; Post-Synthesis    ; Post-Synthesis         ; sld_signaltap:auto_signaltap_0 ;
-; hard_block:auto_generated_inst ; Auto-generated ; Source File       ; Source File            ; hard_block:auto_generated_inst ;
-+--------------------------------+----------------+-------------------+------------------------+--------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Netlist Types Used                                                                                                   ;
++--------------------------------+----------------+--------------------------+------------------------+--------------------------------+
+; Partition Name                 ; Partition Type ; Netlist Type Used        ; Netlist Type Requested ; Partition Contents             ;
++--------------------------------+----------------+--------------------------+------------------------+--------------------------------+
+; Top                            ; User-created   ; Post-Fit                 ; Post-Fit               ;                                ;
+; sld_hub:auto_hub               ; Auto-generated ; Hybrid (Rapid Recompile) ; Post-Synthesis         ; sld_hub:auto_hub               ;
+; sld_signaltap:auto_signaltap_0 ; Auto-generated ; Hybrid (Rapid Recompile) ; Post-Synthesis         ; sld_signaltap:auto_signaltap_0 ;
+; hard_block:auto_generated_inst ; Auto-generated ; Hybrid (Rapid Recompile) ; Source File            ; hard_block:auto_generated_inst ;
++--------------------------------+----------------+--------------------------+------------------------+--------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Rapid Recompile Summary                                                                                          ;
++--------------------------------+------------------------+--------------------------------+-------------------------------+-------+
+; Partition Name                 ; Rapid Recompile Status ; Netlist Preservation Requested ; Netlist Preservation Achieved ; Notes ;
++--------------------------------+------------------------+--------------------------------+-------------------------------+-------+
+; Top                            ; Engaged                ; 100.00% (189 / 189)            ; 100.00% (189 / 189)           ;       ;
+; sld_hub:auto_hub               ; Engaged                ; 94.59% (297 / 314)             ; 64.65% (203 / 314)            ;       ;
+; sld_signaltap:auto_signaltap_0 ; Engaged                ; 76.47% (754 / 986)             ; 76.47% (754 / 986)            ;       ;
+; hard_block:auto_generated_inst ; Engaged                ; 100.00% (44 / 44)              ; 100.00% (44 / 44)             ;       ;
++--------------------------------+------------------------+--------------------------------+-------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Rapid Recompile Table of Modified Assignments                                                                                                                                                   ;
++------------------------------------------+----------------------+-----------------------------------------------------------------------+-----------------------------------------------------------------------+
+; Modified Assignments                     ; Target               ; Previous Value                                                        ; Current Value                                                         ;
++------------------------------------------+----------------------+-----------------------------------------------------------------------+-----------------------------------------------------------------------+
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|gnd ; --                                                                    ; crc[20]                                                               ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|gnd ; --                                                                    ; crc[31]                                                               ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|vcc ; --                                                                    ; crc[22]                                                               ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|vcc ; --                                                                    ; crc[26]                                                               ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|vcc ; --                                                                    ; crc[18]                                                               ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|vcc ; --                                                                    ; crc[30]                                                               ;
+; SLD_NODE_PARAMETER_ASSIGNMENT            ;                      ; --                                                                    ; SLD_POWER_UP_TRIGGER=0                                                ;
+; SLD_NODE_PARAMETER_ASSIGNMENT            ;                      ; --                                                                    ; SLD_ADVANCED_TRIGGER_ENTITY=sld_reserved_top_auto_signaltap_0_1_68ee, ;
+; SLD_NODE_PARAMETER_ASSIGNMENT            ;                      ; --                                                                    ; SLD_INVERSION_MASK=000000000000000000000                              ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|gnd ; crc[18]                                                               ; --                                                                    ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|gnd ; crc[30]                                                               ; --                                                                    ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|gnd ; crc[22]                                                               ; --                                                                    ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|gnd ; crc[26]                                                               ; --                                                                    ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|vcc ; crc[20]                                                               ; --                                                                    ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|vcc ; crc[31]                                                               ; --                                                                    ;
+; SLD_NODE_PARAMETER_ASSIGNMENT            ;                      ; SLD_POWER_UP_TRIGGER=1                                                ; --                                                                    ;
+; SLD_NODE_PARAMETER_ASSIGNMENT            ;                      ; SLD_INVERSION_MASK=000000000100011101111                              ; --                                                                    ;
+; SLD_NODE_PARAMETER_ASSIGNMENT            ;                      ; SLD_ADVANCED_TRIGGER_ENTITY=sld_reserved_top_auto_signaltap_0_1_395c, ; --                                                                    ;
++------------------------------------------+----------------------+-----------------------------------------------------------------------+-----------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Rapid Recompile Table of Changed Logic Entities                                                                                                                                                                                                                                                                                                                            ;
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+
+; Changed Logic Entities                                                                                                                                                                                                                                                                                                                                           ; Number of Changed Nodes ;
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+
+; |sld_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub                                                         ; 30                      ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst                                                                                                                                                                                                                           ; 128                     ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body                                                                                                                                                                                                                                                                      ; 113                     ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1                                                                         ; 35                      ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|lpm_shiftreg:status_register                                                                                                                                                                                                                                         ; 34                      ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_shiftreg:info_data_shift_out                                                                                                                                                    ; 30                      ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem                                                                                                                                                                                                       ; 28                      ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1|lpm_compare:variable_compare_35|cmpr_h3l:auto_generated                 ; 26                      ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1|lpm_compare:variable_compare_38|cmpr_h3l:auto_generated                 ; 26                      ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_8b84:auto_generated                                                                                                                                                                                       ; 20                      ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1|lpm_shiftreg:config_shiftreg_36                                         ; 20                      ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1|lpm_shiftreg:config_shiftreg_39                                         ; 20                      ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst                                                                                                                                                                                     ; 14                      ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|serial_crc_16:\tdo_crc_gen:tdo_crc_calc                                                                                                                                                                                                                              ; 13                      ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1|sld_alt_reduction:unary_2                                               ; 13                      ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:status_advance_pointer_counter|cntr_09i:auto_generated                                                                                                                  ; 10                      ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1|lpm_shiftreg:config_shiftreg_10                                         ; 6                       ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1|lpm_shiftreg:config_shiftreg_13                                         ; 6                       ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1|lpm_shiftreg:config_shiftreg_16                                         ; 6                       ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1|lpm_shiftreg:config_shiftreg_19                                         ; 6                       ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1|lpm_shiftreg:config_shiftreg_22                                         ; 6                       ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1|lpm_shiftreg:config_shiftreg_25                                         ; 6                       ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1|lpm_shiftreg:config_shiftreg_28                                         ; 6                       ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1|lpm_shiftreg:config_shiftreg_31                                         ; 6                       ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1|lpm_shiftreg:config_shiftreg_33                                         ; 6                       ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1|lpm_shiftreg:config_shiftreg_37                                         ; 6                       ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1|lpm_shiftreg:config_shiftreg_4                                          ; 6                       ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1|lpm_shiftreg:config_shiftreg_40                                         ; 6                       ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1|lpm_shiftreg:config_shiftreg_42                                         ; 6                       ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1|lpm_shiftreg:config_shiftreg_7                                          ; 6                       ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|lpm_decode:wdecoder|decode_vnf:auto_generated                                                                                                                                                         ; 2                       ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control                                                                                                                                                                                                                                          ; 2                       ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1|lpm_shiftreg:config_shiftreg_11                                         ; 2                       ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1|lpm_shiftreg:config_shiftreg_14                                         ; 2                       ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1|lpm_shiftreg:config_shiftreg_17                                         ; 2                       ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1|lpm_shiftreg:config_shiftreg_20                                         ; 2                       ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1|lpm_shiftreg:config_shiftreg_23                                         ; 2                       ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1|lpm_shiftreg:config_shiftreg_26                                         ; 2                       ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1|lpm_shiftreg:config_shiftreg_29                                         ; 2                       ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1|lpm_shiftreg:config_shiftreg_32                                         ; 2                       ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1|lpm_shiftreg:config_shiftreg_34                                         ; 2                       ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1|lpm_shiftreg:config_shiftreg_41                                         ; 2                       ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1|lpm_shiftreg:config_shiftreg_5                                          ; 2                       ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1|lpm_shiftreg:config_shiftreg_8                                          ; 2                       ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1|sld_alt_reduction:unary_1                                               ; 2                       ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1|sld_mbpmg:mbpm_12|sld_sbpmg:\gen_sbpmg_pipeline_less_than_two:sm0:0:sm1 ; 2                       ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1|sld_mbpmg:mbpm_15|sld_sbpmg:\gen_sbpmg_pipeline_less_than_two:sm0:0:sm1 ; 2                       ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1|sld_mbpmg:mbpm_18|sld_sbpmg:\gen_sbpmg_pipeline_less_than_two:sm0:0:sm1 ; 2                       ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1|sld_mbpmg:mbpm_21|sld_sbpmg:\gen_sbpmg_pipeline_less_than_two:sm0:0:sm1 ; 2                       ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1|sld_mbpmg:mbpm_24|sld_sbpmg:\gen_sbpmg_pipeline_less_than_two:sm0:0:sm1 ; 2                       ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper|sld_ela_trigger_abo:auto_generated|sld_reserved_top_auto_signaltap_0_1_68ee:mgl_prim1|sld_mbpmg:mbpm_27|sld_sbpmg:\gen_sbpmg_pipeline_less_than_two:sm0:0:sm1 ; 2                       ;
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+
+This list only includes the top 50 out of 56 changed logic entities
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -92,8 +192,8 @@ https://fpgasoftware.intel.com/eula.
 ; auto_signaltap_0|gnd  ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
 ; auto_signaltap_0|gnd  ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
 ; auto_signaltap_0|gnd  ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
-; auto_signaltap_0|gnd  ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
-; auto_signaltap_0|gnd  ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
+; auto_signaltap_0|vcc  ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
+; auto_signaltap_0|vcc  ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
 ; auto_signaltap_0|vcc  ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
 ; auto_signaltap_0|vcc  ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
 ; auto_signaltap_0|vcc  ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
@@ -132,71 +232,6 @@ https://fpgasoftware.intel.com/eula.
 ; vtc:V1|vL[9]          ; post-fitting ; connected ; Top                            ; post-fit          ; vtc:V1|vL[9]                        ; N/A     ;
 ; vtc:V1|vL[9]          ; post-fitting ; connected ; Top                            ; post-fit          ; vtc:V1|vL[9]                        ; N/A     ;
 +-----------------------+--------------+-----------+--------------------------------+-------------------+-------------------------------------+---------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Partition Merge Partition Statistics                                                                                                                          ;
-+---------------------------------------------+-----------------------+-----------------------+--------------------------------+--------------------------------+
-; Statistic                                   ; Top                   ; sld_hub:auto_hub      ; sld_signaltap:auto_signaltap_0 ; hard_block:auto_generated_inst ;
-+---------------------------------------------+-----------------------+-----------------------+--------------------------------+--------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 25 / 41910 ( < 1 % )  ; 60 / 41910 ( < 1 % )  ; 220 / 41910 ( < 1 % )          ; 0 / 41910 ( 0 % )              ;
-;                                             ;                       ;                       ;                                ;                                ;
-; Combinational ALUT usage for logic          ; 42                    ; 93                    ; 201                            ; 0                              ;
-;     -- 7 input functions                    ; 0                     ; 1                     ; 0                              ; 0                              ;
-;     -- 6 input functions                    ; 4                     ; 12                    ; 38                             ; 0                              ;
-;     -- 5 input functions                    ; 6                     ; 23                    ; 27                             ; 0                              ;
-;     -- 4 input functions                    ; 3                     ; 22                    ; 30                             ; 0                              ;
-;     -- <=3 input functions                  ; 29                    ; 35                    ; 106                            ; 0                              ;
-; Memory ALUT usage                           ; 0                     ; 0                     ; 0                              ; 0                              ;
-;     -- 64-address deep                      ; 0                     ; 0                     ; 0                              ; 0                              ;
-;     -- 32-address deep                      ; 0                     ; 0                     ; 0                              ; 0                              ;
-;                                             ;                       ;                       ;                                ;                                ;
-; Dedicated logic registers                   ; 26 / 167640 ( < 1 % ) ; 90 / 167640 ( < 1 % ) ; 397 / 167640 ( < 1 % )         ; 0 / 167640 ( 0 % )             ;
-;                                             ;                       ;                       ;                                ;                                ;
-;                                             ;                       ;                       ;                                ;                                ;
-; I/O pins                                    ; 31                    ; 0                     ; 0                              ; 3                              ;
-; I/O registers                               ; 0                     ; 0                     ; 0                              ; 0                              ;
-; Total block memory bits                     ; 0                     ; 0                     ; 1280                           ; 0                              ;
-; Total block memory implementation bits      ; 0                     ; 0                     ; 10240                          ; 0                              ;
-; JTAG                                        ; 0 / 1 ( 0 % )         ; 0 / 1 ( 0 % )         ; 0 / 1 ( 0 % )                  ; 1 / 1 ( 100 % )                ;
-; M10K block                                  ; 0 / 553 ( 0 % )       ; 0 / 553 ( 0 % )       ; 1 / 553 ( < 1 % )              ; 0 / 553 ( 0 % )                ;
-;                                             ;                       ;                       ;                                ;                                ;
-; Connections                                 ;                       ;                       ;                                ;                                ;
-;     -- Input Connections                    ; 28                    ; 133                   ; 635                            ; 1                              ;
-;     -- Registered Input Connections         ; 26                    ; 109                   ; 416                            ; 0                              ;
-;     -- Output Connections                   ; 20                    ; 171                   ; 34                             ; 572                            ;
-;     -- Registered Output Connections        ; 20                    ; 171                   ; 0                              ; 0                              ;
-;                                             ;                       ;                       ;                                ;                                ;
-; Internal Connections                        ;                       ;                       ;                                ;                                ;
-;     -- Total Connections                    ; 309                   ; 825                   ; 2407                           ; 588                            ;
-;     -- Registered Connections               ; 153                   ; 643                   ; 1411                           ; 0                              ;
-;                                             ;                       ;                       ;                                ;                                ;
-; External Connections                        ;                       ;                       ;                                ;                                ;
-;     -- Top                                  ; 0                     ; 0                     ; 20                             ; 28                             ;
-;     -- sld_hub:auto_hub                     ; 0                     ; 20                    ; 162                            ; 122                            ;
-;     -- sld_signaltap:auto_signaltap_0       ; 20                    ; 162                   ; 64                             ; 423                            ;
-;     -- hard_block:auto_generated_inst       ; 28                    ; 122                   ; 423                            ; 0                              ;
-;                                             ;                       ;                       ;                                ;                                ;
-; Partition Interface                         ;                       ;                       ;                                ;                                ;
-;     -- Input Ports                          ; 8                     ; 45                    ; 99                             ; 6                              ;
-;     -- Output Ports                         ; 30                    ; 62                    ; 35                             ; 14                             ;
-;     -- Bidir Ports                          ; 0                     ; 0                     ; 0                              ; 0                              ;
-;                                             ;                       ;                       ;                                ;                                ;
-; Registered Ports                            ;                       ;                       ;                                ;                                ;
-;     -- Registered Input Ports               ; 0                     ; 13                    ; 15                             ; 0                              ;
-;     -- Registered Output Ports              ; 0                     ; 29                    ; 21                             ; 0                              ;
-;                                             ;                       ;                       ;                                ;                                ;
-; Port Connectivity                           ;                       ;                       ;                                ;                                ;
-;     -- Input Ports driven by GND            ; 0                     ; 0                     ; 15                             ; 0                              ;
-;     -- Output Ports driven by GND           ; 0                     ; 28                    ; 2                              ; 0                              ;
-;     -- Input Ports driven by VCC            ; 0                     ; 0                     ; 17                             ; 0                              ;
-;     -- Output Ports driven by VCC           ; 0                     ; 0                     ; 1                              ; 0                              ;
-;     -- Input Ports with no Source           ; 0                     ; 25                    ; 14                             ; 0                              ;
-;     -- Output Ports with no Source          ; 0                     ; 0                     ; 0                              ; 0                              ;
-;     -- Input Ports with no Fanout           ; 0                     ; 30                    ; 28                             ; 0                              ;
-;     -- Output Ports with no Fanout          ; 0                     ; 29                    ; 23                             ; 0                              ;
-+---------------------------------------------+-----------------------+-----------------------+--------------------------------+--------------------------------+
-Note: Resource usage numbers presented for Partitions containing post-synthesis logic are estimates.  For Partitions containing post-fit logic, resource usage numbers are accurate based on previous placement information.  Actual Fitter results may vary depending on current Fitter Preservation Level assignments.
 
 
 +----------------------------------------------------------------------------------------------------------------------------------+
@@ -356,7 +391,7 @@ Note: Resource usage numbers presented for Partitions containing post-synthesis 
 ;     -- altera_reserved_tms        ; Top       ; Input Pad     ; Unplaced           ; Synthesized                                 ;
 ;     -- altera_reserved_tms~input  ; Top       ; Input Buffer  ; Unplaced           ; Synthesized                                 ;
 ;                                   ;           ;               ;                    ;                                             ;
-; ~QUARTUS_CREATED_GND~0            ; Top       ; Output Port   ; n/a                ;                                             ;
+; ~QUARTUS_CREATED_GND~6            ; Top       ; Output Port   ; n/a                ;                                             ;
 ;                                   ;           ;               ;                    ;                                             ;
 +-----------------------------------+-----------+---------------+--------------------+---------------------------------------------+
 
@@ -366,16 +401,16 @@ Note: Resource usage numbers presented for Partitions containing post-synthesis 
 +---------------------------------------------+--------------------------+
 ; Resource                                    ; Usage                    ;
 +---------------------------------------------+--------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 306                      ;
+; Estimate of Logic utilization (ALMs needed) ; 409                      ;
 ;                                             ;                          ;
-; Combinational ALUT usage for logic          ; 336                      ;
-;     -- 7 input functions                    ; 1                        ;
-;     -- 6 input functions                    ; 54                       ;
-;     -- 5 input functions                    ; 56                       ;
-;     -- 4 input functions                    ; 55                       ;
-;     -- <=3 input functions                  ; 170                      ;
+; Combinational ALUT usage for logic          ; 415                      ;
+;     -- 7 input functions                    ; 3                        ;
+;     -- 6 input functions                    ; 87                       ;
+;     -- 5 input functions                    ; 57                       ;
+;     -- 4 input functions                    ; 76                       ;
+;     -- <=3 input functions                  ; 192                      ;
 ;                                             ;                          ;
-; Dedicated logic registers                   ; 513                      ;
+; Dedicated logic registers                   ; 554                      ;
 ;                                             ;                          ;
 ; I/O pins                                    ; 34                       ;
 ; Total MLAB memory bits                      ; 0                        ;
@@ -384,16 +419,16 @@ Note: Resource usage numbers presented for Partitions containing post-synthesis 
 ; Total DSP Blocks                            ; 0                        ;
 ;                                             ;                          ;
 ; Total PLLs                                  ; 1                        ;
-;     -- PLLs                                 ; 1                        ;
+;     -- Fractional PLLs                      ; 1                        ;
 ;                                             ;                          ;
 ; HSSI RX PCSs                                ; 0 / 9 ( 0 % )            ;
 ; HSSI PMA RX Deserializers                   ; 0 / 9 ( 0 % )            ;
 ; HSSI TX PCSs                                ; 0 / 9 ( 0 % )            ;
 ; HSSI PMA TX Serializers                     ; 0 / 9 ( 0 % )            ;
 ; Maximum fan-out node                        ; altera_internal_jtag~TDO ;
-; Maximum fan-out                             ; 361                      ;
-; Total fan-out                               ; 3336                     ;
-; Average fan-out                             ; 3.56                     ;
+; Maximum fan-out                             ; 392                      ;
+; Total fan-out                               ; 3958                     ;
+; Average fan-out                             ; 3.27                     ;
 +---------------------------------------------+--------------------------+
 
 
@@ -412,26 +447,25 @@ Note: Resource usage numbers presented for Partitions containing post-synthesis 
 Info: *******************************************************************
 Info: Running Quartus Prime Partition Merge
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
-    Info: Processing started: Thu Oct 01 16:21:38 2020
-Info: Command: quartus_cdb --read_settings_files=off --write_settings_files=off top -c top --merge=on
+    Info: Processing started: Wed Oct 07 10:01:57 2020
+Info: Command: quartus_cdb --read_settings_files=on --write_settings_files=off top -c top --merge=on --recompile=on
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (35006): Using previously generated Fitter netlist for partition "Top"
-Info (35007): Using synthesis netlist for partition "sld_hub:auto_hub"
-Info (35007): Using synthesis netlist for partition "sld_signaltap:auto_signaltap_0"
+Info (12849): Using Hybrid (Rapid Recompile) netlist for partition "sld_hub:auto_hub"
+Info (12849): Using Hybrid (Rapid Recompile) netlist for partition "sld_signaltap:auto_signaltap_0"
 Info (35024): Successfully connected in-system debug instance "auto_signaltap_0" to all 53 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
 Info (35002): Resolved and merged 3 partition(s)
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 16 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 735 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 893 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 8 input pins
     Info (21059): Implemented 30 output pins
-    Info (21061): Implemented 685 logic cells
+    Info (21061): Implemented 838 logic cells
     Info (21064): Implemented 10 RAM segments
-    Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Partition Merge was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4900 megabytes
-    Info: Processing ended: Thu Oct 01 16:21:43 2020
+    Info: Peak virtual memory: 4938 megabytes
+    Info: Processing ended: Wed Oct 07 10:02:02 2020
     Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Total CPU time (on all processors): 00:00:04
 
 

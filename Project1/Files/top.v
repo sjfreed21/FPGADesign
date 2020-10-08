@@ -12,7 +12,7 @@ module top(
     output       VGA_SYNC_N
 );
 
-`define sixforty
+`define simulation
 `include "params.vh"
 
 wire reset, pll_clk, pll_lock, hSync, vSync, vActive, ff1, ff2, ffr;

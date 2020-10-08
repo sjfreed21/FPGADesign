@@ -1,0 +1,8 @@
+As of submission time, I am happy to report that my project is working! See included video, including switch operation.
+
+My one problem with the submission comes down to one line - line 19 in pg.v. This line puts the vertical restriction on
+the box, and while it is nice to have, the testbench was created before I had placed that restriction. For the Modelsim
+screenshot, then, this line was commented out in order to show that the switches do indeed have an effect on the color
+output of the VGA.
+
+With that minor exception, all is functioning as intended. I have not added motion yet but would be happy to if needed!
