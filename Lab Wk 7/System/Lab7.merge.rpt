@@ -1,0 +1,331 @@
+Partition Merge report for Lab7
+Thu Oct 08 18:28:51 2020
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Partition Merge Summary
+  3. Partition Merge Netlist Types Used
+  4. Partition Merge Rapid Recompile Summary
+  5. Partition Merge Partition Pin Processing
+  6. Partition Merge Resource Usage Summary
+  7. Partition Merge RAM Summary
+  8. Partition Merge Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-----------------------------------------------------------------------------------+
+; Partition Merge Summary                                                           ;
++---------------------------------+-------------------------------------------------+
+; Partition Merge Status          ; Successful - Thu Oct 08 18:28:51 2020           ;
+; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Standard Edition ;
+; Revision Name                   ; Lab7                                            ;
+; Top-level Entity Name           ; top                                             ;
+; Family                          ; Cyclone V                                       ;
+; Logic utilization (in ALMs)     ; 502 / 41,910 ( 1 % )                            ;
+; Total registers                 ; 565                                             ;
+; Total pins                      ; 21 / 499 ( 4 % )                                ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 512 / 5,662,720 ( < 1 % )                       ;
+; Total DSP Blocks                ; 0 / 112 ( 0 % )                                 ;
+; Total HSSI RX PCSs              ; 0 / 9 ( 0 % )                                   ;
+; Total HSSI PMA RX Deserializers ; 0 / 9 ( 0 % )                                   ;
+; Total HSSI TX PCSs              ; 0 / 9 ( 0 % )                                   ;
+; Total HSSI PMA TX Serializers   ; 0 / 9 ( 0 % )                                   ;
+; Total PLLs                      ; 0 / 15 ( 0 % )                                  ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                                   ;
++---------------------------------+-------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Netlist Types Used                                                                                                   ;
++--------------------------------+----------------+--------------------------+------------------------+--------------------------------+
+; Partition Name                 ; Partition Type ; Netlist Type Used        ; Netlist Type Requested ; Partition Contents             ;
++--------------------------------+----------------+--------------------------+------------------------+--------------------------------+
+; Top                            ; User-created   ; Hybrid (Rapid Recompile) ; Source File            ;                                ;
+; sld_hub:auto_hub               ; Auto-generated ; Hybrid (Rapid Recompile) ; Post-Synthesis         ; sld_hub:auto_hub               ;
+; hard_block:auto_generated_inst ; Auto-generated ; Hybrid (Rapid Recompile) ; Source File            ; hard_block:auto_generated_inst ;
++--------------------------------+----------------+--------------------------+------------------------+--------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Rapid Recompile Summary                                                                                          ;
++--------------------------------+------------------------+--------------------------------+-------------------------------+-------+
+; Partition Name                 ; Rapid Recompile Status ; Netlist Preservation Requested ; Netlist Preservation Achieved ; Notes ;
++--------------------------------+------------------------+--------------------------------+-------------------------------+-------+
+; Top                            ; Engaged                ; 100.00% (1213 / 1213)          ; 100.00% (1213 / 1213)         ;       ;
+; sld_hub:auto_hub               ; Engaged                ; 100.00% (288 / 288)            ; 100.00% (288 / 288)           ;       ;
+; hard_block:auto_generated_inst ; Engaged                ; 100.00% (23 / 23)              ; 100.00% (23 / 23)             ;       ;
++--------------------------------+------------------------+--------------------------------+-------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Partition Pin Processing                                                                                                                                                                                       ;
++---------------------------------------------------------------------------------------------------------------------------------+-----------+---------------+--------------------+---------------------------------------------+
+; Name                                                                                                                            ; Partition ; Type          ; Location           ; Status                                      ;
++---------------------------------------------------------------------------------------------------------------------------------+-----------+---------------+--------------------+---------------------------------------------+
+; CLOCK_50                                                                                                                        ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- CLOCK_50                                                                                                                 ; Top       ; Input Pad     ; IOPAD_X32_Y0_N0    ; Preserved from Post-Fit or Imported Netlist ;
+;     -- CLOCK_50~input                                                                                                           ; Top       ; Input Buffer  ; IOIBUF_X32_Y0_N1   ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; LEDR[0]                                                                                                                         ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- LEDR[0]                                                                                                                  ; Top       ; Output Pad    ; IOPAD_X89_Y11_N43  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- LEDR[0]~output                                                                                                           ; Top       ; Output Buffer ; IOOBUF_X89_Y11_N45 ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; LEDR[1]                                                                                                                         ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- LEDR[1]                                                                                                                  ; Top       ; Output Pad    ; IOPAD_X89_Y9_N20   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- LEDR[1]~output                                                                                                           ; Top       ; Output Buffer ; IOOBUF_X89_Y9_N22  ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; LEDR[2]                                                                                                                         ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- LEDR[2]                                                                                                                  ; Top       ; Output Pad    ; IOPAD_X86_Y0_N17   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- LEDR[2]~output                                                                                                           ; Top       ; Output Buffer ; IOOBUF_X86_Y0_N19  ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; LEDR[3]                                                                                                                         ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- LEDR[3]                                                                                                                  ; Top       ; Output Pad    ; IOPAD_X88_Y0_N35   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- LEDR[3]~output                                                                                                           ; Top       ; Output Buffer ; IOOBUF_X88_Y0_N37  ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; LEDR[4]                                                                                                                         ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- LEDR[4]                                                                                                                  ; Top       ; Output Pad    ; IOPAD_X78_Y0_N34   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- LEDR[4]~output                                                                                                           ; Top       ; Output Buffer ; IOOBUF_X78_Y0_N36  ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; LEDR[5]                                                                                                                         ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- LEDR[5]                                                                                                                  ; Top       ; Output Pad    ; IOPAD_X86_Y0_N34   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- LEDR[5]~output                                                                                                           ; Top       ; Output Buffer ; IOOBUF_X86_Y0_N36  ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; LEDR[6]                                                                                                                         ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- LEDR[6]                                                                                                                  ; Top       ; Output Pad    ; IOPAD_X88_Y0_N52   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- LEDR[6]~output                                                                                                           ; Top       ; Output Buffer ; IOOBUF_X88_Y0_N54  ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; LEDR[7]                                                                                                                         ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- LEDR[7]                                                                                                                  ; Top       ; Output Pad    ; IOPAD_X74_Y0_N57   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- LEDR[7]~output                                                                                                           ; Top       ; Output Buffer ; IOOBUF_X74_Y0_N59  ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; LEDR[8]                                                                                                                         ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- LEDR[8]                                                                                                                  ; Top       ; Output Pad    ; IOPAD_X89_Y9_N3    ; Preserved from Post-Fit or Imported Netlist ;
+;     -- LEDR[8]~output                                                                                                           ; Top       ; Output Buffer ; IOOBUF_X89_Y9_N5   ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; LEDR[9]                                                                                                                         ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- LEDR[9]                                                                                                                  ; Top       ; Output Pad    ; IOPAD_X86_Y0_N0    ; Preserved from Post-Fit or Imported Netlist ;
+;     -- LEDR[9]~output                                                                                                           ; Top       ; Output Buffer ; IOOBUF_X86_Y0_N2   ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; SW[0]                                                                                                                           ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- SW[0]                                                                                                                    ; Top       ; Input Pad     ; IOPAD_X89_Y21_N3   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- SW[0]~input                                                                                                              ; Top       ; Input Buffer  ; IOIBUF_X89_Y21_N4  ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; SW[1]                                                                                                                           ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- SW[1]                                                                                                                    ; Top       ; Input Pad     ; IOPAD_X89_Y25_N20  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- SW[1]~input                                                                                                              ; Top       ; Input Buffer  ; IOIBUF_X89_Y25_N21 ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; SW[2]                                                                                                                           ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- SW[2]                                                                                                                    ; Top       ; Input Pad     ; IOPAD_X89_Y21_N37  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- SW[2]~input                                                                                                              ; Top       ; Input Buffer  ; IOIBUF_X89_Y21_N38 ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; SW[3]                                                                                                                           ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- SW[3]                                                                                                                    ; Top       ; Input Pad     ; IOPAD_X89_Y25_N54  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- SW[3]~input                                                                                                              ; Top       ; Input Buffer  ; IOIBUF_X89_Y25_N55 ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; SW[4]                                                                                                                           ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- SW[4]                                                                                                                    ; Top       ; Input Pad     ; IOPAD_X89_Y20_N43  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- SW[4]~input                                                                                                              ; Top       ; Input Buffer  ; IOIBUF_X89_Y20_N44 ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; SW[5]                                                                                                                           ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- SW[5]                                                                                                                    ; Top       ; Input Pad     ; IOPAD_X89_Y20_N60  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- SW[5]~input                                                                                                              ; Top       ; Input Buffer  ; IOIBUF_X89_Y20_N61 ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; SW[6]                                                                                                                           ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- SW[6]                                                                                                                    ; Top       ; Input Pad     ; IOPAD_X89_Y20_N77  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- SW[6]~input                                                                                                              ; Top       ; Input Buffer  ; IOIBUF_X89_Y20_N78 ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; SW[7]                                                                                                                           ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- SW[7]                                                                                                                    ; Top       ; Input Pad     ; IOPAD_X89_Y25_N37  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- SW[7]~input                                                                                                              ; Top       ; Input Buffer  ; IOIBUF_X89_Y25_N38 ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; SW[8]                                                                                                                           ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- SW[8]                                                                                                                    ; Top       ; Input Pad     ; IOPAD_X89_Y20_N94  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- SW[8]~input                                                                                                              ; Top       ; Input Buffer  ; IOIBUF_X89_Y20_N95 ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; SW[9]                                                                                                                           ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- SW[9]                                                                                                                    ; Top       ; Input Pad     ; IOPAD_X89_Y21_N20  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- SW[9]~input                                                                                                              ; Top       ; Input Buffer  ; IOIBUF_X89_Y21_N21 ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; altera_reserved_tck                                                                                                             ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- altera_reserved_tck                                                                                                      ; Top       ; Input Pad     ; Unplaced           ; Synthesized                                 ;
+;     -- altera_reserved_tck~input                                                                                                ; Top       ; Input Buffer  ; Unplaced           ; Synthesized                                 ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; altera_reserved_tdi                                                                                                             ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- altera_reserved_tdi                                                                                                      ; Top       ; Input Pad     ; Unplaced           ; Synthesized                                 ;
+;     -- altera_reserved_tdi~input                                                                                                ; Top       ; Input Buffer  ; Unplaced           ; Synthesized                                 ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; altera_reserved_tdo                                                                                                             ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- altera_reserved_tdo                                                                                                      ; Top       ; Output Pad    ; Unplaced           ; Synthesized                                 ;
+;     -- altera_reserved_tdo~output                                                                                               ; Top       ; Output Buffer ; Unplaced           ; Synthesized                                 ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; altera_reserved_tms                                                                                                             ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- altera_reserved_tms                                                                                                      ; Top       ; Input Pad     ; Unplaced           ; Synthesized                                 ;
+;     -- altera_reserved_tms~input                                                                                                ; Top       ; Input Buffer  ; Unplaced           ; Synthesized                                 ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; jtag.bp.L1_master_0_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_clr             ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; jtag.bp.L1_master_0_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_ena             ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; jtag.bp.L1_master_0_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_ir_in_0_        ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; jtag.bp.L1_master_0_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_ir_in_1_        ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; jtag.bp.L1_master_0_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_ir_in_2_        ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; jtag.bp.L1_master_0_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_ir_out_0_       ; Top       ; Output Port   ; n/a                ;                                             ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; jtag.bp.L1_master_0_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_ir_out_1_       ; Top       ; Output Port   ; n/a                ;                                             ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; jtag.bp.L1_master_0_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_ir_out_2_       ; Top       ; Output Port   ; n/a                ;                                             ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; jtag.bp.L1_master_0_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_cdr  ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; jtag.bp.L1_master_0_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_cir  ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; jtag.bp.L1_master_0_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_e1dr ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; jtag.bp.L1_master_0_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_e1ir ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; jtag.bp.L1_master_0_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_e2dr ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; jtag.bp.L1_master_0_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_e2ir ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; jtag.bp.L1_master_0_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_pdr  ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; jtag.bp.L1_master_0_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_pir  ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; jtag.bp.L1_master_0_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_rti  ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; jtag.bp.L1_master_0_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_sdr  ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; jtag.bp.L1_master_0_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_sdrs ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; jtag.bp.L1_master_0_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_sir  ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; jtag.bp.L1_master_0_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_sirs ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; jtag.bp.L1_master_0_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_tlr  ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; jtag.bp.L1_master_0_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_udr  ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; jtag.bp.L1_master_0_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_uir  ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; jtag.bp.L1_master_0_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_raw_tck         ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; jtag.bp.L1_master_0_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_raw_tms         ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; jtag.bp.L1_master_0_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_tdi             ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; jtag.bp.L1_master_0_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_tdo             ; Top       ; Output Port   ; n/a                ;                                             ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; jtag.bp.L1_master_0_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_usr1            ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
+; ~QUARTUS_CREATED_GND~0                                                                                                          ; Top       ; Output Port   ; n/a                ;                                             ;
+;                                                                                                                                 ;           ;               ;                    ;                                             ;
++---------------------------------------------------------------------------------------------------------------------------------+-----------+---------------+--------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Partition Merge Resource Usage Summary                                 ;
++---------------------------------------------+--------------------------+
+; Resource                                    ; Usage                    ;
++---------------------------------------------+--------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 569                      ;
+;                                             ;                          ;
+; Combinational ALUT usage for logic          ; 658                      ;
+;     -- 7 input functions                    ; 9                        ;
+;     -- 6 input functions                    ; 154                      ;
+;     -- 5 input functions                    ; 110                      ;
+;     -- 4 input functions                    ; 132                      ;
+;     -- <=3 input functions                  ; 253                      ;
+;                                             ;                          ;
+; Dedicated logic registers                   ; 565                      ;
+;                                             ;                          ;
+; I/O pins                                    ; 21                       ;
+; Total MLAB memory bits                      ; 0                        ;
+; Total block memory bits                     ; 512                      ;
+;                                             ;                          ;
+; Total DSP Blocks                            ; 0                        ;
+;                                             ;                          ;
+; HSSI RX PCSs                                ; 0 / 9 ( 0 % )            ;
+; HSSI PMA RX Deserializers                   ; 0 / 9 ( 0 % )            ;
+; HSSI TX PCSs                                ; 0 / 9 ( 0 % )            ;
+; HSSI PMA TX Serializers                     ; 0 / 9 ( 0 % )            ;
+; Maximum fan-out node                        ; altera_internal_jtag~TDO ;
+; Maximum fan-out                             ; 354                      ;
+; Total fan-out                               ; 4689                     ;
+; Average fan-out                             ; 3.47                     ;
++---------------------------------------------+--------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge RAM Summary                                                                                                                                                                                                  ;
++--------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+; Name                                                                                                                     ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF  ;
++--------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+; Lab7:L1|Lab7_master_0:master_0|altera_avalon_sc_fifo:fifo|altsyncram:mem_rtl_0|altsyncram_g0n1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 64           ; 8            ; 64           ; 8            ; 512  ; None ;
++--------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+
+
++--------------------------+
+; Partition Merge Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Partition Merge
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
+    Info: Processing started: Thu Oct 08 18:28:46 2020
+Info: Command: quartus_cdb --read_settings_files=on --write_settings_files=off Lab7 -c Lab7 --merge=on --recompile=on
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (12849): Using Hybrid (Rapid Recompile) netlist for partition "Top"
+Info (12849): Using Hybrid (Rapid Recompile) netlist for partition "sld_hub:auto_hub"
+Info (35002): Resolved and merged 2 partition(s)
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 9 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 10 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SW[0]" File: C:/Users/sjfre/Documents/FPGADesign/Lab Wk 7/Files/top.v Line: 3
+    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/sjfre/Documents/FPGADesign/Lab Wk 7/Files/top.v Line: 3
+    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/sjfre/Documents/FPGADesign/Lab Wk 7/Files/top.v Line: 3
+    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/sjfre/Documents/FPGADesign/Lab Wk 7/Files/top.v Line: 3
+    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/sjfre/Documents/FPGADesign/Lab Wk 7/Files/top.v Line: 3
+    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/sjfre/Documents/FPGADesign/Lab Wk 7/Files/top.v Line: 3
+    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/sjfre/Documents/FPGADesign/Lab Wk 7/Files/top.v Line: 3
+    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/sjfre/Documents/FPGADesign/Lab Wk 7/Files/top.v Line: 3
+    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/sjfre/Documents/FPGADesign/Lab Wk 7/Files/top.v Line: 3
+    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/sjfre/Documents/FPGADesign/Lab Wk 7/Files/top.v Line: 3
+Info (21057): Implemented 1096 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 14 input pins
+    Info (21059): Implemented 11 output pins
+    Info (21061): Implemented 1068 logic cells
+    Info (21064): Implemented 1 RAM segments
+Info: Quartus Prime Partition Merge was successful. 0 errors, 12 warnings
+    Info: Peak virtual memory: 4932 megabytes
+    Info: Processing ended: Thu Oct 08 18:28:52 2020
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:04
+
+
