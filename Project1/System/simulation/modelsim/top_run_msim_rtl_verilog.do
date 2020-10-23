@@ -16,8 +16,8 @@ vmap work rtl_work
 
 vlog "C:/Users/sjfre/Documents/FPGADesign/Project1/System/video_pll_sim/video_pll.vo"
 
-vlog -vlog01compat -work work +incdir+C:/Users/sjfre/Documents/FPGADesign/Project1/Files {C:/Users/sjfre/Documents/FPGADesign/Project1/Files/vtc.v}
 vlog -vlog01compat -work work +incdir+C:/Users/sjfre/Documents/FPGADesign/Project1/Files {C:/Users/sjfre/Documents/FPGADesign/Project1/Files/pg.v}
+vlog -vlog01compat -work work +incdir+C:/Users/sjfre/Documents/FPGADesign/Project1/Files {C:/Users/sjfre/Documents/FPGADesign/Project1/Files/vtc.v}
 vlog -vlog01compat -work work +incdir+C:/Users/sjfre/Documents/FPGADesign/Project1/Files {C:/Users/sjfre/Documents/FPGADesign/Project1/Files/ff.v}
 vlog -vlog01compat -work work +incdir+C:/Users/sjfre/Documents/FPGADesign/Project1/Files {C:/Users/sjfre/Documents/FPGADesign/Project1/Files/tb_top.v}
 vlog -vlog01compat -work work +incdir+C:/Users/sjfre/Documents/FPGADesign/Project1/Files {C:/Users/sjfre/Documents/FPGADesign/Project1/Files/top.v}

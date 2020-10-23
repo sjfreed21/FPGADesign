@@ -52,7 +52,7 @@ assign vLine = vL;
 // vSync
 always @(vL)
 begin
-    if(vL < vSTime)
+    if(vL >= vArea - vBPorch - vSTime && vL < hArea - hBPorch)    // (vL < vSTime)
         vS = 1;
     else
         vS = 0;
@@ -63,7 +63,7 @@ assign vSync = vS;
 // hSync
 always @(hP)
 begin
-    if (hP < hSTime)
+    if(hP >= hArea - hBPorch - hSTime && hP < hArea - hBPorch)    // (hP < hSTime)
         hS = 0;
     else
         hS = 1;
@@ -74,13 +74,15 @@ assign hSync = hS;
 // vActive
 always @(hP or vL)
 begin
-    if (vL > (vSTime + vBPorch) && vL < (vArea - vFPorch))
+    if(vL < vArea - vBPorch - vSTime - vFPorch)              // (vL > (vSTime + vBPorch) && vL < (vArea - vFPorch))
     begin
-        if(hP > (hSTime + hBPorch) && hP < (hArea - hFPorch))
+        if(hP < hArea - hBPorch - hSTime - hFPorch)          // (hP > (hSTime + hBPorch) && hP < (hArea - hFPorch))
             vA = 1;
         else
             vA = 0;
-    end  
+    end
+    else 
+        vA = 0;  
 end
 
 assign vActive = vA;

@@ -38,7 +38,8 @@ vtc #(.hArea(hArea), .hFPorch(hFPorch), .hBPorch(hBPorch), .hSTime(hSTime), .vAr
 assign VGA_HS = hSync;
 assign VGA_VS = vSync;
 
-pg #(.min(min), .max(max)) P1 (.hPixel(hPixel), .vLine(vLine), .SW(SW), .RED(RED), .GRN(GRN), .BLU(BLU));
+// pg #(.min(min), .max(max)) P1 (.hPixel(hPixel), .vLine(vLine), .SW(SW), .RED(RED), .GRN(GRN), .BLU(BLU));
+pg2 P2 (.clk(pll_clk), .hPixel(hPixel), .vLine(vLine), .vActive(vActive), .SW(SW), .RED(RED), .GRN(GRN), .BLU(BLU));
 
 assign VGA_R = RED;
 assign VGA_G = GRN;
