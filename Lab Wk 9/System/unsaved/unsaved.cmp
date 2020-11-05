@@ -1,0 +1,8 @@
+	component unsaved is
+		port (
+			clk_clk         : in  std_logic                     := 'X'; -- clk
+			to_hex_readdata : out std_logic_vector(31 downto 0);        -- readdata
+			reset_reset_n   : in  std_logic                     := 'X'  -- reset_n
+		);
+	end component unsaved;
+

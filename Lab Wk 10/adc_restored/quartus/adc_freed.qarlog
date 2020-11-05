@@ -1,0 +1,29 @@
+Quartus Prime Archive log --	C:/Users/sjfre/Documents/FPGADesign/Lab Wk 10/adc_restored/quartus/adc_freed.qarlog
+
+Archive:	C:/Users/sjfre/Documents/FPGADesign/Lab Wk 10/adc_restored/quartus/adc_freed.qar
+Date:		Thu Oct 29 16:44:34 2020
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Standard Edition
+
+	=========== Files Selected: ===========
+C:/Users/sjfre/Documents/FPGADesign/Lab Wk 10/adc_restored/quartus/adc.SDC
+C:/Users/sjfre/Documents/FPGADesign/Lab Wk 10/adc_restored/quartus/adc.qpf
+C:/Users/sjfre/Documents/FPGADesign/Lab Wk 10/adc_restored/quartus/adc.qsf
+C:/Users/sjfre/Documents/FPGADesign/Lab Wk 10/adc_restored/quartus/adc.sdc
+C:/Users/sjfre/Documents/FPGADesign/Lab Wk 10/adc_restored/quartus/adc.tcl
+C:/Users/sjfre/Documents/FPGADesign/Lab Wk 10/adc_restored/quartus/adc_assignment_defaults.qdf
+C:/Users/sjfre/Documents/FPGADesign/Lab Wk 10/adc_restored/quartus/output_file.cof
+C:/Users/sjfre/Documents/FPGADesign/Lab Wk 10/adc_restored/quartus/pins.tcl
+C:/Users/sjfre/Documents/FPGADesign/Lab Wk 10/adc_restored/quartus/pll.cmp
+C:/Users/sjfre/Documents/FPGADesign/Lab Wk 10/adc_restored/quartus/pll.qip
+C:/Users/sjfre/Documents/FPGADesign/Lab Wk 10/adc_restored/quartus/pll.v
+C:/Users/sjfre/Documents/FPGADesign/Lab Wk 10/adc_restored/quartus/pll/pll_0002.qip
+C:/Users/sjfre/Documents/FPGADesign/Lab Wk 10/adc_restored/quartus/pll/pll_0002.v
+C:/Users/sjfre/Documents/FPGADesign/Lab Wk 10/adc_restored/source/adc.sv
+C:/Users/sjfre/Documents/FPGADesign/Lab Wk 10/adc_restored/source/adc_control.sv
+C:/Users/sjfre/Documents/FPGADesign/Lab Wk 10/adc_restored/source/bin2bcd.sv
+C:/Users/sjfre/Documents/FPGADesign/Lab Wk 10/adc_restored/source/seg7.sv
+C:/Users/sjfre/Documents/FPGADesign/Lab Wk 10/adc_restored/source/tb_adc.sv
+	======= Total: 18 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

@@ -1,0 +1,37 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/sjfre/Documents/FPGADesign/Lab Wk 10/adc_restored/quartus/simulation/modelsim
+vpll_0002
+DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1604010670
+!i10b 1
+!s100 YIlJPAf@5G=`_@@5DhkAZ3
+!s11b Dg1SIo80bB@j0V0VzS_@n1
+IIn;bX?7JMI4CiTHZ?X8[j2
+VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1604010563
+8C:/Users/sjfre/Documents/FPGADesign/Lab Wk 10/adc_restored/quartus/pll/pll_0002.v
+FC:/Users/sjfre/Documents/FPGADesign/Lab Wk 10/adc_restored/quartus/pll/pll_0002.v
+!i122 1
+L0 2 85
+OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1604010670.000000
+!s107 C:/Users/sjfre/Documents/FPGADesign/Lab Wk 10/adc_restored/quartus/pll/pll_0002.v|
+!s90 -reportprogress|300|-sv|-work|pll|+incdir+C:/Users/sjfre/Documents/FPGADesign/Lab Wk 10/adc_restored/quartus/pll|C:/Users/sjfre/Documents/FPGADesign/Lab Wk 10/adc_restored/quartus/pll/pll_0002.v|
+!i113 1
+o-sv -work pll
+!s92 -sv -work pll {+incdir+C:/Users/sjfre/Documents/FPGADesign/Lab Wk 10/adc_restored/quartus/pll}
+tCvgOpt 0

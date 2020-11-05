@@ -1,0 +1,24 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst embedded_system.master_0.b2p -pg 1
+preplace inst embedded_system.clk_0 -pg 1 -lvl 1 -y 140
+preplace inst embedded_system.master_0.fifo -pg 1
+preplace inst embedded_system.master_0.jtag_phy_embedded_in_jtag_master -pg 1
+preplace inst embedded_system.master_0 -pg 1 -lvl 2 -y 50
+preplace inst embedded_system -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst embedded_system.master_0.clk_src -pg 1
+preplace inst embedded_system.reg32_avalon_interface_0 -pg 1 -lvl 3 -y 60
+preplace inst embedded_system.master_0.p2b -pg 1
+preplace inst embedded_system.master_0.timing_adt -pg 1
+preplace inst embedded_system.master_0.clk_rst -pg 1
+preplace inst embedded_system.master_0.b2p_adapter -pg 1
+preplace inst embedded_system.master_0.p2b_adapter -pg 1
+preplace inst embedded_system.master_0.transacto -pg 1
+preplace netloc EXPORT<net_container>embedded_system</net_container>(SLAVE)reg32_avalon_interface_0.conduit_end,(SLAVE)embedded_system.to_hex) 1 0 3 NJ 130 NJ 130 NJ
+preplace netloc POINT_TO_POINT<net_container>embedded_system</net_container>(MASTER)master_0.master,(SLAVE)reg32_avalon_interface_0.avalon_slave_0) 1 2 1 540
+preplace netloc FAN_OUT<net_container>embedded_system</net_container>(SLAVE)master_0.clk,(MASTER)clk_0.clk,(SLAVE)reg32_avalon_interface_0.clock_sink) 1 1 2 260 150 540
+preplace netloc EXPORT<net_container>embedded_system</net_container>(SLAVE)embedded_system.clk,(SLAVE)clk_0.clk_in) 1 0 1 NJ
+preplace netloc INTERCONNECT<net_container>embedded_system</net_container>(MASTER)master_0.master_reset,(SLAVE)reg32_avalon_interface_0.clock_reset,(MASTER)clk_0.clk_reset,(SLAVE)master_0.clk_reset) 1 1 2 280 170 520
+preplace netloc EXPORT<net_container>embedded_system</net_container>(SLAVE)embedded_system.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
+levelinfo -pg 1 0 50 750
+levelinfo -hier embedded_system 60 90 360 590 740
