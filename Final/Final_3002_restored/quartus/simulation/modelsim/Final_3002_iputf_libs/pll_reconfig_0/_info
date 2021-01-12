@@ -1,0 +1,195 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/simulation/modelsim
+valtera_pll_reconfig_core
+Z1 !s110 1607717516
+!i10b 1
+!s100 ZCMj`EK_2ElBn52k8f_b82
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IV:e7ZmB5<oIoWcbGJREQC2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1607549946
+Z5 8C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/altera_pll_reconfig_core.v
+Z6 FC:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/altera_pll_reconfig_core.v
+!i122 16
+L0 16 1675
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1607717516.000000
+Z9 !s107 C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/altera_pll_reconfig_core.v|
+Z10 !s90 -reportprogress|300|C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/altera_pll_reconfig_core.v|-work|pll_reconfig_0|
+!i113 1
+Z11 o-work pll_reconfig_0
+Z12 tCvgOpt 0
+valtera_pll_reconfig_top
+R1
+!i10b 1
+!s100 If[]5^;h1KC<H0oOU^NYH3
+R2
+Ih7lXUlS:2b3m0TmK^hB0m2
+R3
+R0
+R4
+8C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/altera_pll_reconfig_top.v
+FC:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/altera_pll_reconfig_top.v
+!i122 15
+L0 16 412
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/altera_pll_reconfig_top.v|
+!s90 -reportprogress|300|C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/altera_pll_reconfig_top.v|-work|pll_reconfig_0|
+!i113 1
+R11
+R12
+valtera_std_synchronizer
+!s110 1607717517
+!i10b 1
+!s100 fX7zRoi8Va6gia[OIzlPn2
+R2
+I0edI7Gf;HIM2i7haW_=@m3
+R3
+R0
+R4
+8C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/altera_std_synchronizer.v
+FC:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/altera_std_synchronizer.v
+!i122 17
+L0 37 120
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/altera_std_synchronizer.v|
+!s90 -reportprogress|300|C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/altera_std_synchronizer.v|-work|pll_reconfig_0|
+!i113 1
+R11
+R12
+vdprio_mux
+R1
+!i10b 1
+!s100 L=ANTnf:]M@ZW>CMCNRgZ1
+R2
+IR=G3PNWWfH1F`lhIo@nHT2
+R3
+R0
+R4
+R5
+R6
+!i122 16
+L0 1739 50
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vdyn_phase_shift
+R1
+!i10b 1
+!s100 d0m9oO0Gn[j6fnJVWDG5[2
+R2
+I?HE_a<e:IE0FO3o_`YhkF3
+R3
+R0
+R4
+R5
+R6
+!i122 16
+L0 1884 227
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vfpll_dprio_init
+R1
+!i10b 1
+!s100 XFNgm2E8K=JP`YPX99lzi3
+R2
+IB^z>A@dQF8;_zJO9TnRK83
+R3
+R0
+R4
+R5
+R6
+!i122 16
+L0 1789 95
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vgeneric_lcell_comb
+R1
+!i10b 1
+!s100 7:2TNUQQMAmRlA4TXJcjD3
+R2
+I;jhAG^NCD2Vj]GmA=L<3d1
+R3
+R0
+R4
+R5
+R6
+!i122 16
+L0 2112 73
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vself_reset
+R1
+!i10b 1
+!s100 lC`=>HJIDL`:`9=41eY^B3
+R2
+IO]d71YELn;HJInA[kdek;2
+R3
+R0
+R4
+R5
+R6
+!i122 16
+L0 1691 47
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12

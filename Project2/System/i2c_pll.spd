@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file path="i2c_pll_sim/i2c_pll.vo" type="VERILOG" />
+ <topLevel name="i2c_pll" />
+ <deviceFamily name="cyclonev" />
+</simPackage>

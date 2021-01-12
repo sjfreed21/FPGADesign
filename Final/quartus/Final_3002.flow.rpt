@@ -1,0 +1,143 @@
+Flow report for Final_3002
+Fri Dec 11 16:06:47 2020
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-----------------------------------------------------------------------------------+
+; Flow Summary                                                                      ;
++---------------------------------+-------------------------------------------------+
+; Flow Status                     ; Successful - Fri Dec 11 16:06:47 2020           ;
+; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Standard Edition ;
+; Revision Name                   ; Final_3002                                      ;
+; Top-level Entity Name           ; Final_3002                                      ;
+; Family                          ; Cyclone V                                       ;
+; Device                          ; 5CSXFC6D6F31C6                                  ;
+; Timing Models                   ; Final                                           ;
+; Logic utilization (in ALMs)     ; 2,061 / 41,910 ( 5 % )                          ;
+; Total registers                 ; 1643                                            ;
+; Total pins                      ; 48 / 499 ( 10 % )                               ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 768 / 5,662,720 ( < 1 % )                       ;
+; Total PLLs                      ; 2 / 15 ( 13 % )                                 ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                                   ;
+; Total DSP Blocks                ; 0 / 112 ( 0 % )                                 ;
+; Total HSSI RX PCSs              ; 0 / 9 ( 0 % )                                   ;
+; Total HSSI PMA RX Deserializers ; 0 / 9 ( 0 % )                                   ;
+; Total HSSI TX PCSs              ; 0 / 9 ( 0 % )                                   ;
+; Total HSSI PMA TX Serializers   ; 0 / 9 ( 0 % )                                   ;
++---------------------------------+-------------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 12/11/2020 15:57:01 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; Final_3002          ;
++-------------------+---------------------+
+
+
++--------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                   ;
++-----------------+-------+---------------+-------------+------------+
+; Assignment Name ; Value ; Default Value ; Entity Name ; Section Id ;
++-----------------+-------+---------------+-------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:56     ; 1.0                     ; 4954 MB             ; 00:01:23                           ;
+; Partition Merge      ; 00:00:01     ; 1.0                     ; 4775 MB             ; 00:00:01                           ;
+; Fitter               ; 00:02:06     ; 1.1                     ; 6354 MB             ; 00:04:13                           ;
+; Assembler            ; 00:00:10     ; 1.0                     ; 4864 MB             ; 00:00:09                           ;
+; Timing Analyzer      ; 00:00:22     ; 1.2                     ; 5221 MB             ; 00:00:26                           ;
+; EDA Netlist Writer   ; 00:00:05     ; 1.0                     ; 4861 MB             ; 00:00:04                           ;
+; Analysis & Synthesis ; 00:00:31     ; 1.0                     ; 4950 MB             ; 00:01:00                           ;
+; Partition Merge      ; 00:00:02     ; 1.0                     ; 4927 MB             ; 00:00:03                           ;
+; Fitter               ; 00:01:22     ; 1.1                     ; 6574 MB             ; 00:02:31                           ;
+; Assembler            ; 00:00:08     ; 1.0                     ; 4863 MB             ; 00:00:09                           ;
+; Timing Analyzer      ; 00:00:17     ; 1.3                     ; 5219 MB             ; 00:00:21                           ;
+; EDA Netlist Writer   ; 00:00:04     ; 1.0                     ; 4860 MB             ; 00:00:04                           ;
+; Total                ; 00:06:04     ; --                      ; --                  ; 00:10:24                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; SamsSurface      ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge      ; SamsSurface      ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; SamsSurface      ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; SamsSurface      ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; SamsSurface      ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; SamsSurface      ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; SamsSurface      ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge      ; SamsSurface      ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; SamsSurface      ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; SamsSurface      ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; SamsSurface      ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; SamsSurface      ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_sh --restore -output C:\Users\sjfre\Documents\FPGADesign\Final/ -no_overwrite C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/Final_3002_Freed.qar
+quartus_map --read_settings_files=on --write_settings_files=off Final_3002 -c Final_3002
+quartus_cdb --read_settings_files=off --write_settings_files=off Final_3002 -c Final_3002 --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off Final_3002 -c Final_3002
+quartus_asm --read_settings_files=on --write_settings_files=off Final_3002 -c Final_3002
+quartus_sta Final_3002 -c Final_3002
+quartus_eda --read_settings_files=off --write_settings_files=off Final_3002 -c Final_3002
+quartus_map --read_settings_files=on --write_settings_files=off Final_3002 -c Final_3002
+quartus_cdb --read_settings_files=off --write_settings_files=off Final_3002 -c Final_3002 --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off Final_3002 -c Final_3002
+quartus_asm --read_settings_files=on --write_settings_files=off Final_3002 -c Final_3002
+quartus_sta Final_3002 -c Final_3002
+quartus_eda --read_settings_files=off --write_settings_files=off Final_3002 -c Final_3002
+
+
+

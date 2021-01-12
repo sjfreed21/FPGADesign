@@ -1,0 +1,121 @@
+Quartus Prime Archive log --	C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/Final_3002_Freed.qarlog
+
+Archive:	C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/Final_3002_Freed.qar
+Date:		Fri Dec 11 15:35:25 2020
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Standard Edition
+
+	=========== Files Selected: ===========
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/Final_3002.out.sdc
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/Final_3002.qpf
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/Final_3002.qsf
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/Final_3002.sdc
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/assignment_defaults.qdf
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/db/pll_sim.cmp.rdb
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/db/signaltap_auto_stripped.stp
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/issp.qsys
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/issp.sopcinfo
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/issp/issp.cmp
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/issp/issp.spd
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/issp/simulation/issp.sip
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/issp/simulation/issp.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/issp/simulation/submodules/altsource_probe.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/issp/synthesis/issp.debuginfo
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/issp/synthesis/issp.qip
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/issp/synthesis/issp.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/issp/synthesis/submodules/altsource_probe_top.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll.qsys
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll.sopcinfo
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/jtag_pll.cmp
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/jtag_pll.spd
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/jtag_pll.sip
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/jtag_pll.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/altera_avalon_packets_to_master.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/altera_avalon_sc_fifo.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/altera_avalon_st_bytes_to_packets.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/altera_avalon_st_clock_crosser.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/altera_avalon_st_idle_inserter.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/altera_avalon_st_idle_remover.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/altera_avalon_st_jtag_interface.sdc
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/altera_avalon_st_jtag_interface.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/altera_avalon_st_packets_to_bytes.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/altera_avalon_st_pipeline_base.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/altera_avalon_st_pipeline_stage.sv
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/altera_jtag_dc_streaming.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/altera_jtag_sld_node.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/altera_jtag_streaming.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/altera_merlin_master_translator.sv
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/altera_merlin_slave_translator.sv
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/altera_pll_reconfig_core.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/altera_pll_reconfig_top.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/altera_reset_controller.sdc
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/altera_reset_controller.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/altera_reset_synchronizer.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/altera_std_synchronizer.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/altera_std_synchronizer_nocut.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/jtag_pll_master_0.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/jtag_pll_master_0_b2p_adapter.sv
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/jtag_pll_master_0_p2b_adapter.sv
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/jtag_pll_master_0_timing_adt.sv
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/jtag_pll_mm_interconnect_0.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/simulation/submodules/jtag_pll_pll_0.vo
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/synthesis/jtag_pll.debuginfo
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/synthesis/jtag_pll.qip
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/synthesis/jtag_pll.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/synthesis/submodules/altera_avalon_packets_to_master.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/synthesis/submodules/altera_avalon_sc_fifo.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/synthesis/submodules/altera_avalon_st_bytes_to_packets.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/synthesis/submodules/altera_avalon_st_clock_crosser.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/synthesis/submodules/altera_avalon_st_idle_inserter.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/synthesis/submodules/altera_avalon_st_idle_remover.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/synthesis/submodules/altera_avalon_st_jtag_interface.sdc
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/synthesis/submodules/altera_avalon_st_jtag_interface.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/synthesis/submodules/altera_avalon_st_packets_to_bytes.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/synthesis/submodules/altera_avalon_st_pipeline_base.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/synthesis/submodules/altera_avalon_st_pipeline_stage.sv
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/synthesis/submodules/altera_jtag_dc_streaming.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/synthesis/submodules/altera_jtag_sld_node.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/synthesis/submodules/altera_jtag_streaming.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/synthesis/submodules/altera_merlin_master_translator.sv
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/synthesis/submodules/altera_merlin_slave_translator.sv
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/synthesis/submodules/altera_pll_reconfig_core.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/synthesis/submodules/altera_pll_reconfig_top.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/synthesis/submodules/altera_reset_controller.sdc
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/synthesis/submodules/altera_reset_controller.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/synthesis/submodules/altera_reset_synchronizer.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/synthesis/submodules/altera_std_synchronizer.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/synthesis/submodules/altera_std_synchronizer_nocut.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/synthesis/submodules/jtag_pll_master_0.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/synthesis/submodules/jtag_pll_master_0_b2p_adapter.sv
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/synthesis/submodules/jtag_pll_master_0_p2b_adapter.sv
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/synthesis/submodules/jtag_pll_master_0_timing_adt.sv
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/synthesis/submodules/jtag_pll_mm_interconnect_0.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/synthesis/submodules/jtag_pll_pll_0.qip
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/jtag_pll/synthesis/submodules/jtag_pll_pll_0.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/pll.cmp
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/pll.qip
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/pll.sip
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/pll.spd
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/pll.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/pll/pll_0002.qip
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/pll/pll_0002.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/pll_sim/pll.vo
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/signaltap.stp
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/source/Final_3002.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/source/counter.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/source/display.v
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/source/issp.tcl
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/source/pins.tcl
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/source/pll.tcl
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/source/prog.tcl
+C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/source/tb.v
+C:/users/sjfre/documents/fpgadesign/final/final_3002_restored/source/params.vh
+	======= Total: 104 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Fri Dec 11 15:57:00 2020
+Source archive file:	C:/Users/sjfre/Documents/FPGADesign/Final/Final_3002_restored/quartus/Final_3002_Freed.qar
+Archive was extracted into	C:/Users/sjfre/Documents/FPGADesign/Final/
+		 - successfully.

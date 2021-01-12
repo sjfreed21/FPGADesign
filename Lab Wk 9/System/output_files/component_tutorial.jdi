@@ -3,7 +3,7 @@
     <hash md5_digest_80b="945b39aa119c17b963cc"/>
   </project>
   <file_info>
-    <file device="5CSXFC6D6F31C6" path="component_tutorial.sof" usercode="0xFFFFFFFF"/>
+    <file device="5CSXFC6D6F31C6" path="component_tutorial.sof" usercode="0xAEAFEED0"/>
   </file_info>
   <hub_info hub_ir_width="4" ir_width="3" node_addr_width="1" node_count="1"/>
   <node_info>

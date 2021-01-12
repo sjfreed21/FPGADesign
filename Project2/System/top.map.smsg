@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at params.vh(1): object "RESET" differs only in case from object "reset" in the same scope File: C:/Users/sjfre/Documents/FPGADesign/Project2/Files/params.vh Line: 1
+Info (10281): Verilog HDL Declaration information at csl.v(3): object "reset" differs only in case from object "RESET" in the same scope File: C:/Users/sjfre/Documents/FPGADesign/Project2/Files/csl.v Line: 3

@@ -1,0 +1,449 @@
+Partition Merge report for top
+Wed Dec 09 21:49:11 2020
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Partition Merge Summary
+  3. Partition Merge Netlist Types Used
+  4. Partition Merge Rapid Recompile Summary
+  5. Partition Merge Rapid Recompile Table of Changed Logic Entities
+  6. Partition Merge Rapid Recompile Table of Modified Assignments
+  7. Connections to In-System Debugging Instance "auto_signaltap_0"
+  8. Partition Merge Partition Pin Processing
+  9. Partition Merge Resource Usage Summary
+ 10. Partition Merge RAM Summary
+ 11. Partition Merge Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-----------------------------------------------------------------------------------+
+; Partition Merge Summary                                                           ;
++---------------------------------+-------------------------------------------------+
+; Partition Merge Status          ; Successful - Wed Dec 09 21:49:10 2020           ;
+; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Standard Edition ;
+; Revision Name                   ; top                                             ;
+; Top-level Entity Name           ; top                                             ;
+; Family                          ; Cyclone V                                       ;
+; Logic utilization (in ALMs)     ; 671 / 41,910 ( 2 % )                            ;
+; Total registers                 ; 779                                             ;
+; Total pins                      ; 9 / 499 ( 2 % )                                 ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 3,859,568 / 5,662,720 ( 68 % )                  ;
+; Total DSP Blocks                ; 0 / 112 ( 0 % )                                 ;
+; Total HSSI RX PCSs              ; 0 / 9 ( 0 % )                                   ;
+; Total HSSI PMA RX Deserializers ; 0 / 9 ( 0 % )                                   ;
+; Total HSSI TX PCSs              ; 0 / 9 ( 0 % )                                   ;
+; Total HSSI PMA TX Serializers   ; 0 / 9 ( 0 % )                                   ;
+; Total PLLs                      ; 1 / 15 ( 7 % )                                  ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                                   ;
++---------------------------------+-------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Netlist Types Used                                                                                                   ;
++--------------------------------+----------------+--------------------------+------------------------+--------------------------------+
+; Partition Name                 ; Partition Type ; Netlist Type Used        ; Netlist Type Requested ; Partition Contents             ;
++--------------------------------+----------------+--------------------------+------------------------+--------------------------------+
+; Top                            ; User-created   ; Hybrid (Rapid Recompile) ; Source File            ;                                ;
+; sld_hub:auto_hub               ; Auto-generated ; Hybrid (Rapid Recompile) ; Post-Synthesis         ; sld_hub:auto_hub               ;
+; sld_signaltap:auto_signaltap_0 ; Auto-generated ; Hybrid (Rapid Recompile) ; Post-Synthesis         ; sld_signaltap:auto_signaltap_0 ;
+; hard_block:auto_generated_inst ; Auto-generated ; Hybrid (Rapid Recompile) ; Source File            ; hard_block:auto_generated_inst ;
++--------------------------------+----------------+--------------------------+------------------------+--------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Rapid Recompile Summary                                                                                          ;
++--------------------------------+------------------------+--------------------------------+-------------------------------+-------+
+; Partition Name                 ; Rapid Recompile Status ; Netlist Preservation Requested ; Netlist Preservation Achieved ; Notes ;
++--------------------------------+------------------------+--------------------------------+-------------------------------+-------+
+; Top                            ; Engaged                ; 99.90% (1019 / 1020)           ; 94.22% (961 / 1020)           ;       ;
+; sld_hub:auto_hub               ; Engaged                ; 97.41% (452 / 464)             ; 62.72% (291 / 464)            ;       ;
+; sld_signaltap:auto_signaltap_0 ; Engaged                ; 89.98% (1123 / 1248)           ; 82.61% (1031 / 1248)          ;       ;
+; hard_block:auto_generated_inst ; Engaged                ; 100.00% (46 / 46)              ; 100.00% (46 / 46)             ;       ;
++--------------------------------+------------------------+--------------------------------+-------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Rapid Recompile Table of Changed Logic Entities                                                                                                                                                                                                                                                                    ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+
+; Changed Logic Entities                                                                                                                                                                                                                                                                                   ; Number of Changed Nodes ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+
+; |top                                                                                                                                                                                                                                                                                                     ; 1                       ;
+; |sld_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub ; 25                      ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body                                                                                                                                                                                                              ; 82                      ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_ab84:auto_generated                                                                                                                               ; 59                      ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_rom_sr:crc_rom_sr                                                                                                                                                                                        ; 32                      ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|serial_crc_16:\tdo_crc_gen:tdo_crc_calc                                                                                                                                                                      ; 28                      ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst                                                                                                                                                                   ; 26                      ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:\adv_point_3_and_more:advance_pointer_counter|cntr_u8i:auto_generated                                           ; 24                      ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_shiftreg:ram_data_shift_out                                                                                             ; 5                       ;
+; |sld_signaltap                                                                                                                                                                                                                                                                                           ; 4                       ;
+; |sld_signaltap|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst                                                                                                                             ; 4                       ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Partition Merge Rapid Recompile Table of Modified Assignments                                        ;
++------------------------------------------+------------------------+----------------+-----------------+
+; Modified Assignments                     ; Target                 ; Previous Value ; Current Value   ;
++------------------------------------------+------------------------+----------------+-----------------+
+; CONNECT_TO_SLD_NODE_ENTITY_PORT          ; clkout:O1|out          ; --             ; acq_data_in[2]  ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; AUD_BCLK               ; --             ; acq_data_in[3]  ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; aud_count:C2|count[0]  ; --             ; acq_data_in[4]  ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; aud_count:C2|count[10] ; --             ; acq_data_in[5]  ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; aud_count:C2|count[11] ; --             ; acq_data_in[6]  ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; aud_count:C2|count[12] ; --             ; acq_data_in[7]  ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; aud_count:C2|count[13] ; --             ; acq_data_in[8]  ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; aud_count:C2|count[14] ; --             ; acq_data_in[9]  ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; aud_count:C2|count[15] ; --             ; acq_data_in[10] ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; aud_count:C2|count[16] ; --             ; acq_data_in[11] ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; aud_count:C2|count[17] ; --             ; acq_data_in[12] ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; aud_count:C2|count[18] ; --             ; acq_data_in[13] ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; aud_count:C2|count[19] ; --             ; acq_data_in[14] ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; aud_count:C2|count[1]  ; --             ; acq_data_in[15] ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; aud_count:C2|count[2]  ; --             ; acq_data_in[16] ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; aud_count:C2|count[3]  ; --             ; acq_data_in[17] ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; aud_count:C2|count[4]  ; --             ; acq_data_in[18] ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; aud_count:C2|count[5]  ; --             ; acq_data_in[19] ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; aud_count:C2|count[6]  ; --             ; acq_data_in[20] ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; aud_count:C2|count[7]  ; --             ; acq_data_in[21] ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; aud_count:C2|count[8]  ; --             ; acq_data_in[22] ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; aud_count:C2|count[9]  ; --             ; acq_data_in[23] ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|gnd   ; --             ; crc[6]          ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|gnd   ; --             ; crc[11]         ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|gnd   ; --             ; crc[24]         ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|gnd   ; --             ; crc[28]         ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|gnd   ; --             ; crc[5]          ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|gnd   ; --             ; crc[16]         ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|gnd   ; --             ; crc[3]          ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|gnd   ; --             ; crc[9]          ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|gnd   ; --             ; crc[13]         ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|gnd   ; --             ; crc[23]         ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|gnd   ; --             ; crc[30]         ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|gnd   ; --             ; crc[8]          ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|vcc   ; --             ; crc[10]         ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|vcc   ; --             ; crc[12]         ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|vcc   ; --             ; crc[14]         ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|vcc   ; --             ; crc[15]         ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|vcc   ; --             ; crc[18]         ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|vcc   ; --             ; crc[4]          ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|vcc   ; --             ; crc[26]         ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|vcc   ; --             ; crc[31]         ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|vcc   ; --             ; crc[21]         ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|vcc   ; --             ; crc[1]          ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; i2c_count:C1|count[0]  ; --             ; acq_data_in[24] ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; i2c_count:C1|count[1]  ; --             ; acq_data_in[25] ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; i2c_count:C1|count[2]  ; --             ; acq_data_in[26] ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; i2c_count:C1|count[3]  ; --             ; acq_data_in[27] ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; i2c_count:C1|count[4]  ; --             ; acq_data_in[28] ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; i2c_count:C1|count[5]  ; --             ; acq_data_in[29] ;
++------------------------------------------+------------------------+----------------+-----------------+
+This list only includes the top 50 out of 103 changed assignments
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Connections to In-System Debugging Instance "auto_signaltap_0"                                                                                                                                        ;
++------------------------+---------------+-----------+--------------------------------+-------------------+-----------------------------------------------------------------------------------+---------+
+; Name                   ; Type          ; Status    ; Partition Name                 ; Netlist Type Used ; Actual Connection                                                                 ; Details ;
++------------------------+---------------+-----------+--------------------------------+-------------------+-----------------------------------------------------------------------------------+---------+
+; CLOCK_50               ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; CLOCK_50~input                                                                    ; N/A     ;
+; FPGA_I2C_SCLK          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; i2c_mem:M1|altsyncram:altsyncram_component|altsyncram_ldg1:auto_generated|q_a[1]  ; N/A     ;
+; FPGA_I2C_SDAT          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; FPGA_I2C_SDAT~input                                                               ; N/A     ;
+; clkout:O1|out          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                                               ; N/A     ;
+; AUD_BCLK               ; post-fitting  ; connected ; Top                            ; post-synthesis    ; audio_pll:P1|audio_pll_0002:audio_pll_inst|altera_pll:altera_pll_i|outclk_wire[0] ; N/A     ;
+; aud_count:C2|count[0]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; aud_count:C2|count[0]                                                             ; N/A     ;
+; aud_count:C2|count[10] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; aud_count:C2|count[10]                                                            ; N/A     ;
+; aud_count:C2|count[11] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; aud_count:C2|count[11]                                                            ; N/A     ;
+; aud_count:C2|count[12] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; aud_count:C2|count[12]                                                            ; N/A     ;
+; aud_count:C2|count[13] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; aud_count:C2|count[13]                                                            ; N/A     ;
+; aud_count:C2|count[14] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; aud_count:C2|count[14]                                                            ; N/A     ;
+; aud_count:C2|count[15] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; aud_count:C2|count[15]                                                            ; N/A     ;
+; aud_count:C2|count[16] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; aud_count:C2|count[16]                                                            ; N/A     ;
+; aud_count:C2|count[17] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; aud_count:C2|count[17]                                                            ; N/A     ;
+; aud_count:C2|count[18] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; aud_count:C2|count[18]                                                            ; N/A     ;
+; aud_count:C2|count[19] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; aud_count:C2|count[19]                                                            ; N/A     ;
+; aud_count:C2|count[1]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; aud_count:C2|count[1]                                                             ; N/A     ;
+; aud_count:C2|count[2]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; aud_count:C2|count[2]                                                             ; N/A     ;
+; aud_count:C2|count[3]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; aud_count:C2|count[3]                                                             ; N/A     ;
+; aud_count:C2|count[4]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; aud_count:C2|count[4]                                                             ; N/A     ;
+; aud_count:C2|count[5]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; aud_count:C2|count[5]                                                             ; N/A     ;
+; aud_count:C2|count[6]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; aud_count:C2|count[6]                                                             ; N/A     ;
+; aud_count:C2|count[7]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; aud_count:C2|count[7]                                                             ; N/A     ;
+; aud_count:C2|count[8]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; aud_count:C2|count[8]                                                             ; N/A     ;
+; aud_count:C2|count[9]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; aud_count:C2|count[9]                                                             ; N/A     ;
+; auto_signaltap_0|gnd   ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                               ; N/A     ;
+; auto_signaltap_0|gnd   ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                               ; N/A     ;
+; auto_signaltap_0|gnd   ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                               ; N/A     ;
+; auto_signaltap_0|gnd   ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                               ; N/A     ;
+; auto_signaltap_0|gnd   ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                               ; N/A     ;
+; auto_signaltap_0|gnd   ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                               ; N/A     ;
+; auto_signaltap_0|gnd   ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                               ; N/A     ;
+; auto_signaltap_0|gnd   ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                               ; N/A     ;
+; auto_signaltap_0|gnd   ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                               ; N/A     ;
+; auto_signaltap_0|gnd   ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                               ; N/A     ;
+; auto_signaltap_0|gnd   ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                               ; N/A     ;
+; auto_signaltap_0|gnd   ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                               ; N/A     ;
+; auto_signaltap_0|gnd   ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                               ; N/A     ;
+; auto_signaltap_0|gnd   ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                               ; N/A     ;
+; auto_signaltap_0|gnd   ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                               ; N/A     ;
+; auto_signaltap_0|gnd   ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                               ; N/A     ;
+; auto_signaltap_0|gnd   ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                               ; N/A     ;
+; auto_signaltap_0|gnd   ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                               ; N/A     ;
+; auto_signaltap_0|gnd   ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                               ; N/A     ;
+; auto_signaltap_0|gnd   ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                               ; N/A     ;
+; auto_signaltap_0|vcc   ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                               ; N/A     ;
+; auto_signaltap_0|vcc   ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                               ; N/A     ;
+; auto_signaltap_0|vcc   ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                               ; N/A     ;
+; auto_signaltap_0|vcc   ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                               ; N/A     ;
+; auto_signaltap_0|vcc   ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                               ; N/A     ;
+; auto_signaltap_0|vcc   ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                               ; N/A     ;
+; auto_signaltap_0|vcc   ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                               ; N/A     ;
+; auto_signaltap_0|vcc   ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                               ; N/A     ;
+; auto_signaltap_0|vcc   ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                               ; N/A     ;
+; auto_signaltap_0|vcc   ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                               ; N/A     ;
+; auto_signaltap_0|vcc   ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                               ; N/A     ;
+; auto_signaltap_0|vcc   ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                               ; N/A     ;
+; i2c_count:C1|count[0]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; i2c_count:C1|count[0]                                                             ; N/A     ;
+; i2c_count:C1|count[0]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; i2c_count:C1|count[0]                                                             ; N/A     ;
+; i2c_count:C1|count[1]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; i2c_count:C1|count[1]                                                             ; N/A     ;
+; i2c_count:C1|count[1]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; i2c_count:C1|count[1]                                                             ; N/A     ;
+; i2c_count:C1|count[2]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; i2c_count:C1|count[2]                                                             ; N/A     ;
+; i2c_count:C1|count[2]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; i2c_count:C1|count[2]                                                             ; N/A     ;
+; i2c_count:C1|count[3]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; i2c_count:C1|count[3]                                                             ; N/A     ;
+; i2c_count:C1|count[3]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; i2c_count:C1|count[3]                                                             ; N/A     ;
+; i2c_count:C1|count[4]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; i2c_count:C1|count[4]                                                             ; N/A     ;
+; i2c_count:C1|count[4]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; i2c_count:C1|count[4]                                                             ; N/A     ;
+; i2c_count:C1|count[5]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; i2c_count:C1|count[5]                                                             ; N/A     ;
+; i2c_count:C1|count[5]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; i2c_count:C1|count[5]                                                             ; N/A     ;
++------------------------+---------------+-----------+--------------------------------+-------------------+-----------------------------------------------------------------------------------+---------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Partition Pin Processing                                                                                                                                ;
++--------------------------------------------------------------------------+-----------+---------------+--------------------+---------------------------------------------+
+; Name                                                                     ; Partition ; Type          ; Location           ; Status                                      ;
++--------------------------------------------------------------------------+-----------+---------------+--------------------+---------------------------------------------+
+; AUD_BCLK                                                                 ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- AUD_BCLK                                                          ; Top       ; Output Pad    ; Unplaced           ; Preserved from Synthesis Netlist (WYSIWYG)  ;
+;     -- AUD_BCLK~output                                                   ; Top       ; Output Buffer ; Unplaced           ; Preserved from Synthesis Netlist (WYSIWYG)  ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; AUD_DACDAT                                                               ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- AUD_DACDAT                                                        ; Top       ; Output Pad    ; Unplaced           ; Synthesized                                 ;
+;     -- AUD_DACDAT~output                                                 ; Top       ; Output Buffer ; Unplaced           ; Synthesized                                 ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; AUD_DACLRCK                                                              ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- AUD_DACLRCK                                                       ; Top       ; Output Pad    ; IOPAD_X89_Y16_N54  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- AUD_DACLRCK~output                                                ; Top       ; Output Buffer ; IOOBUF_X89_Y16_N56 ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; AUD_XCK                                                                  ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- AUD_XCK                                                           ; Top       ; Output Pad    ; Unplaced           ; Preserved from Synthesis Netlist (WYSIWYG)  ;
+;     -- AUD_XCK~output                                                    ; Top       ; Output Buffer ; Unplaced           ; Preserved from Synthesis Netlist (WYSIWYG)  ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; CLOCK_50                                                                 ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- CLOCK_50                                                          ; Top       ; Input Pad     ; Unplaced           ; Preserved from Synthesis Netlist (WYSIWYG)  ;
+;     -- CLOCK_50~input                                                    ; Top       ; Input Buffer  ; Unplaced           ; Preserved from Synthesis Netlist (WYSIWYG)  ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; FPGA_I2C_SCLK                                                            ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- FPGA_I2C_SCLK                                                     ; Top       ; Output Pad    ; IOPAD_X89_Y13_N20  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- FPGA_I2C_SCLK~output                                              ; Top       ; Output Buffer ; IOOBUF_X89_Y13_N22 ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; FPGA_I2C_SDAT                                                            ; Top       ; Bidir Port    ; n/a                ;                                             ;
+;     -- FPGA_I2C_SDAT                                                     ; Top       ; Bidir Pad     ; IOPAD_X89_Y13_N3   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- FPGA_I2C_SDAT~output                                              ; Top       ; Output Buffer ; IOOBUF_X89_Y13_N5  ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; KEY[0]                                                                   ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- KEY[0]                                                            ; Top       ; Input Pad     ; IOPAD_X22_Y0_N34   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- KEY[0]~input                                                      ; Top       ; Input Buffer  ; IOIBUF_X22_Y0_N35  ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; KEY[1]                                                                   ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- KEY[1]                                                            ; Top       ; Input Pad     ; IOPAD_X22_Y0_N51   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- KEY[1]~input                                                      ; Top       ; Input Buffer  ; IOIBUF_X22_Y0_N52  ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; altera_reserved_tck                                                      ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- altera_reserved_tck                                               ; Top       ; Input Pad     ; Unplaced           ; Synthesized                                 ;
+;     -- altera_reserved_tck~input                                         ; Top       ; Input Buffer  ; Unplaced           ; Synthesized                                 ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; altera_reserved_tdi                                                      ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- altera_reserved_tdi                                               ; Top       ; Input Pad     ; Unplaced           ; Synthesized                                 ;
+;     -- altera_reserved_tdi~input                                         ; Top       ; Input Buffer  ; Unplaced           ; Synthesized                                 ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; altera_reserved_tdo                                                      ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- altera_reserved_tdo                                               ; Top       ; Output Pad    ; Unplaced           ; Synthesized                                 ;
+;     -- altera_reserved_tdo~output                                        ; Top       ; Output Buffer ; Unplaced           ; Synthesized                                 ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; altera_reserved_tms                                                      ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- altera_reserved_tms                                               ; Top       ; Input Pad     ; Unplaced           ; Synthesized                                 ;
+;     -- altera_reserved_tms~input                                         ; Top       ; Input Buffer  ; Unplaced           ; Synthesized                                 ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; jtag.bp.M2_altsyncram_component_auto_generated_mgl_prim2_clr             ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; jtag.bp.M2_altsyncram_component_auto_generated_mgl_prim2_ena             ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; jtag.bp.M2_altsyncram_component_auto_generated_mgl_prim2_ir_in_0_        ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; jtag.bp.M2_altsyncram_component_auto_generated_mgl_prim2_ir_in_1_        ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; jtag.bp.M2_altsyncram_component_auto_generated_mgl_prim2_ir_in_2_        ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; jtag.bp.M2_altsyncram_component_auto_generated_mgl_prim2_ir_in_3_        ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; jtag.bp.M2_altsyncram_component_auto_generated_mgl_prim2_ir_in_4_        ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; jtag.bp.M2_altsyncram_component_auto_generated_mgl_prim2_ir_in_5_        ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; jtag.bp.M2_altsyncram_component_auto_generated_mgl_prim2_ir_in_6_        ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; jtag.bp.M2_altsyncram_component_auto_generated_mgl_prim2_ir_in_7_        ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; jtag.bp.M2_altsyncram_component_auto_generated_mgl_prim2_ir_out_0_       ; Top       ; Output Port   ; n/a                ;                                             ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; jtag.bp.M2_altsyncram_component_auto_generated_mgl_prim2_ir_out_1_       ; Top       ; Output Port   ; n/a                ;                                             ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; jtag.bp.M2_altsyncram_component_auto_generated_mgl_prim2_ir_out_2_       ; Top       ; Output Port   ; n/a                ;                                             ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; jtag.bp.M2_altsyncram_component_auto_generated_mgl_prim2_ir_out_3_       ; Top       ; Output Port   ; n/a                ;                                             ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; jtag.bp.M2_altsyncram_component_auto_generated_mgl_prim2_ir_out_4_       ; Top       ; Output Port   ; n/a                ;                                             ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; jtag.bp.M2_altsyncram_component_auto_generated_mgl_prim2_ir_out_5_       ; Top       ; Output Port   ; n/a                ;                                             ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; jtag.bp.M2_altsyncram_component_auto_generated_mgl_prim2_ir_out_6_       ; Top       ; Output Port   ; n/a                ;                                             ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; jtag.bp.M2_altsyncram_component_auto_generated_mgl_prim2_ir_out_7_       ; Top       ; Output Port   ; n/a                ;                                             ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; jtag.bp.M2_altsyncram_component_auto_generated_mgl_prim2_jtag_state_cdr  ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; jtag.bp.M2_altsyncram_component_auto_generated_mgl_prim2_jtag_state_e1dr ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; jtag.bp.M2_altsyncram_component_auto_generated_mgl_prim2_jtag_state_sdr  ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; jtag.bp.M2_altsyncram_component_auto_generated_mgl_prim2_jtag_state_udr  ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; jtag.bp.M2_altsyncram_component_auto_generated_mgl_prim2_jtag_state_uir  ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; jtag.bp.M2_altsyncram_component_auto_generated_mgl_prim2_raw_tck         ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; jtag.bp.M2_altsyncram_component_auto_generated_mgl_prim2_tdi             ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; jtag.bp.M2_altsyncram_component_auto_generated_mgl_prim2_tdo             ; Top       ; Output Port   ; n/a                ;                                             ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; jtag.bp.M2_altsyncram_component_auto_generated_mgl_prim2_usr1            ; Top       ; Input Port    ; n/a                ;                                             ;
+;                                                                          ;           ;               ;                    ;                                             ;
+; pre_syn.bp.O1_out                                                        ; Top       ; Output Port   ; n/a                ;                                             ;
+;                                                                          ;           ;               ;                    ;                                             ;
++--------------------------------------------------------------------------+-----------+---------------+--------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Partition Merge Resource Usage Summary                                 ;
++---------------------------------------------+--------------------------+
+; Resource                                    ; Usage                    ;
++---------------------------------------------+--------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 813                      ;
+;                                             ;                          ;
+; Combinational ALUT usage for logic          ; 723                      ;
+;     -- 7 input functions                    ; 6                        ;
+;     -- 6 input functions                    ; 298                      ;
+;     -- 5 input functions                    ; 145                      ;
+;     -- 4 input functions                    ; 57                       ;
+;     -- <=3 input functions                  ; 217                      ;
+;                                             ;                          ;
+; Dedicated logic registers                   ; 779                      ;
+;                                             ;                          ;
+; I/O pins                                    ; 9                        ;
+; Total MLAB memory bits                      ; 0                        ;
+; Total block memory bits                     ; 3859568                  ;
+;                                             ;                          ;
+; Total DSP Blocks                            ; 0                        ;
+;                                             ;                          ;
+; Total PLLs                                  ; 1                        ;
+;     -- Fractional PLLs                      ; 1                        ;
+;                                             ;                          ;
+; HSSI RX PCSs                                ; 0 / 9 ( 0 % )            ;
+; HSSI PMA RX Deserializers                   ; 0 / 9 ( 0 % )            ;
+; HSSI TX PCSs                                ; 0 / 9 ( 0 % )            ;
+; HSSI PMA TX Serializers                     ; 0 / 9 ( 0 % )            ;
+; Maximum fan-out node                        ; altera_internal_jtag~TDO ;
+; Maximum fan-out                             ; 993                      ;
+; Total fan-out                               ; 22121                    ;
+; Average fan-out                             ; 9.45                     ;
++---------------------------------------------+--------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge RAM Summary                                                                                                                                                                                                                                                                                                ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+---------+--------------------+
+; Name                                                                                                                                                                                                  ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size    ; MIF                ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+---------+--------------------+
+; data:M2|altsyncram:altsyncram_component|altsyncram_21j1:auto_generated|altsyncram_jlk2:altsyncram1|ALTSYNCRAM                                                                                         ; AUTO ; True Dual Port   ; 240255       ; 16           ; 240255       ; 16           ; 3844080 ; ../Files/music.mif ;
+; i2c_mem:M1|altsyncram:altsyncram_component|altsyncram_ldg1:auto_generated|ALTSYNCRAM                                                                                                                  ; AUTO ; ROM              ; 64           ; 2            ; --           ; --           ; 128     ; ../Files/i2c.mif   ;
+; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_ab84:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 512          ; 30           ; 512          ; 30           ; 15360   ; None               ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+---------+--------------------+
+
+
++--------------------------+
+; Partition Merge Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Partition Merge
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
+    Info: Processing started: Wed Dec 09 21:49:04 2020
+Info: Command: quartus_cdb --read_settings_files=on --write_settings_files=off top -c top --merge=on --recompile=on
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (12849): Using Hybrid (Rapid Recompile) netlist for partition "Top"
+Info (12849): Using Hybrid (Rapid Recompile) netlist for partition "sld_hub:auto_hub"
+Info (12849): Using Hybrid (Rapid Recompile) netlist for partition "sld_signaltap:auto_signaltap_0"
+Info (35024): Successfully connected in-system debug instance "auto_signaltap_0" to all 69 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
+Info (35002): Resolved and merged 3 partition(s)
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 17 node(s), including 0 DDIO, 2 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "KEY[0]" File: C:/Users/sjfre/Documents/FPGADesign/Project2/Files/top.v Line: 3
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/sjfre/Documents/FPGADesign/Project2/Files/top.v Line: 3
+Info (21057): Implemented 1877 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
+    Info (21059): Implemented 6 output pins
+    Info (21060): Implemented 1 bidirectional pins
+    Info (21061): Implemented 1352 logic cells
+    Info (21064): Implemented 503 RAM segments
+Warning (20013): Ignored 1 assignments for entity "altsyncram_8i84" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_global_assignment -name OPTIMIZE_POWER_DURING_SYNTHESIS NORMAL_COMPILATION -entity altsyncram_8i84 -tag quartusii was ignored
+Warning (20013): Ignored 1 assignments for entity "altsyncram_ai84" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_global_assignment -name OPTIMIZE_POWER_DURING_SYNTHESIS NORMAL_COMPILATION -entity altsyncram_ai84 -tag quartusii was ignored
+Warning (20013): Ignored 1 assignments for entity "altsyncram_i884" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_global_assignment -name OPTIMIZE_POWER_DURING_SYNTHESIS NORMAL_COMPILATION -entity altsyncram_i884 -tag quartusii was ignored
+Warning (20013): Ignored 1 assignments for entity "altsyncram_m884" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_global_assignment -name OPTIMIZE_POWER_DURING_SYNTHESIS NORMAL_COMPILATION -entity altsyncram_m884 -tag quartusii was ignored
+Warning (20013): Ignored 1 assignments for entity "altsyncram_qb84" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_global_assignment -name OPTIMIZE_POWER_DURING_SYNTHESIS NORMAL_COMPILATION -entity altsyncram_qb84 -tag quartusii was ignored
+Info: Quartus Prime Partition Merge was successful. 0 errors, 14 warnings
+    Info: Peak virtual memory: 5083 megabytes
+    Info: Processing ended: Wed Dec 09 21:49:11 2020
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:06
+
+
